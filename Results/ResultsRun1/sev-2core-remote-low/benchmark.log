@@ -1,0 +1,452 @@
+ExecuteWorkloadMode  Driver Configuration
+ExecuteWorkloadMode  Workload Start Time:	2026-07-04 - 02:15:34.907
+Parameters:
+	Mode:                           execute_benchmark
+	Name:                           LDBC-SNB
+	DB:                             org.ldbcouncil.snb.impls.workloads.cypher.interactive.CypherInteractiveDb
+	Workload:                       org.ldbcouncil.snb.driver.workloads.interactive.LdbcSnbInteractiveWorkload
+	Operation Count:                250
+	Warmup Count:                   100
+	Skip Count:                     0
+	Worker Threads:                 2
+	Status Display Interval:        00:01.000 (m:s.ms)
+	Time Unit:                      MILLISECONDS
+	Results Directory:              /home/denny/ldbc-snb/ldbc_snb_interactive_v1_impls/cypher/results
+	Time Compression Ratio:         0.1000000
+	Validation Parameter Size:      0
+	Validation Serialization Check: true
+	Validation Database File:       null
+	Spinner Sleep Duration:         00:00.001 (m:s.ms) / 1 (ms)
+	Print Help:                     false
+	Ignore Scheduled Start Times:   false
+	User-defined parameters:
+		endpoint = bolt://localhost:7687
+		flush_log = false
+		ldbc.snb.interactive.LdbcQuery10_enable = true
+		ldbc.snb.interactive.LdbcQuery11_enable = true
+		ldbc.snb.interactive.LdbcQuery12_enable = true
+		ldbc.snb.interactive.LdbcQuery13_enable = true
+		ldbc.snb.interactive.LdbcQuery14_enable = true
+		ldbc.snb.interactive.LdbcQuery1_enable = true
+		ldbc.snb.interactive.LdbcQuery2_enable = true
+		ldbc.snb.interactive.LdbcQuery3_enable = true
+		ldbc.snb.interactive.LdbcQuery4_enable = true
+		ldbc.snb.interactive.LdbcQuery5_enable = true
+		ldbc.snb.interactive.LdbcQuery6_enable = true
+		ldbc.snb.interactive.LdbcQuery7_enable = true
+		ldbc.snb.interactive.LdbcQuery8_enable = true
+		ldbc.snb.interactive.LdbcQuery9_enable = true
+		ldbc.snb.interactive.LdbcShortQuery1PersonProfile_enable = true
+		ldbc.snb.interactive.LdbcShortQuery2PersonPosts_enable = true
+		ldbc.snb.interactive.LdbcShortQuery3PersonFriends_enable = true
+		ldbc.snb.interactive.LdbcShortQuery4MessageContent_enable = true
+		ldbc.snb.interactive.LdbcShortQuery5MessageCreator_enable = true
+		ldbc.snb.interactive.LdbcShortQuery6MessageForum_enable = true
+		ldbc.snb.interactive.LdbcShortQuery7MessageReplies_enable = true
+		ldbc.snb.interactive.LdbcUpdate1AddPerson_enable = true
+		ldbc.snb.interactive.LdbcUpdate2AddPostLike_enable = true
+		ldbc.snb.interactive.LdbcUpdate3AddCommentLike_enable = true
+		ldbc.snb.interactive.LdbcUpdate4AddForum_enable = true
+		ldbc.snb.interactive.LdbcUpdate5AddForumMembership_enable = true
+		ldbc.snb.interactive.LdbcUpdate6AddPost_enable = true
+		ldbc.snb.interactive.LdbcUpdate7AddComment_enable = true
+		ldbc.snb.interactive.LdbcUpdate8AddFriendship_enable = true
+		ldbc.snb.interactive.parameters_dir = /home/denny/ldbc-snb/ldbc_snb_datagen_hadoop/substitution_parameters/
+		ldbc.snb.interactive.scale_factor = 1
+		ldbc.snb.interactive.short_read_dissipation = 0.2
+		ldbc.snb.interactive.updates_dir = /home/denny/ldbc-snb/ldbc_snb_datagen_hadoop/social_network/
+		log_delayed = true
+		password = admin
+		peer_identifiers = 
+		printQueryNames = false
+		printQueryResults = false
+		printQueryStrings = false
+		queryDir = queries/
+		user = neo4j
+		workload_statistics = false
+
+ExecuteWorkloadMode  
+ --------------------
+ --- Warmup Phase ---
+ --------------------
+ExecuteWorkloadMode  Scanning workload streams to calculate their limits...
+WorkloadStreams  Scanned 0 of 0 - OFFSET
+WorkloadStreams  Scanned 102 of 100 - RUN
+ExecuteWorkloadMode  Loaded workload: org.ldbcouncil.snb.driver.workloads.interactive.LdbcSnbInteractiveWorkload
+ExecuteWorkloadMode  Retrieving workload stream: LdbcSnbInteractiveWorkload
+Unable to load query from file: queries//interactive-complex-3-duration-as-function.cypherUnable to load query from file: queries//interactive-complex-4-duration-as-function.cypherUnable to load query from file: queries//interactive-complex-7-with-second.cypherUnable to load query from file: queries//interactive-update-1-add-person.cypherUnable to load query from file: queries//interactive-update-1-add-person-companies.cypherUnable to load query from file: queries//interactive-update-1-add-person-emails.cypherUnable to load query from file: queries//interactive-update-1-add-person-languages.cypherUnable to load query from file: queries//interactive-update-1-add-person-tags.cypherUnable to load query from file: queries//interactive-update-1-add-person-universities.cypherUnable to load query from file: queries//interactive-update-4-add-forum.cypherUnable to load query from file: queries//interactive-update-4-add-forum-tags.cypherUnable to load query from file: queries//interactive-update-6-add-post.cypherUnable to load query from file: queries//interactive-update-6-add-post-tags.cypherUnable to load query from file: queries//interactive-update-7-add-comment.cypherUnable to load query from file: queries//interactive-update-7-add-comment-tags.cypherUnable to load query from file: queries//interactive-update-6-add-post-content.cypherUnable to load query from file: queries//interactive-update-6-add-post-imagefile.cypherUnable to load query from file: queries//interactive-complex-3-duration-as-function.cypherUnable to load query from file: queries//interactive-complex-4-duration-as-function.cypherUnable to load query from file: queries//interactive-complex-7-with-second.cypherUnable to load query from file: queries//interactive-update-1-add-person.cypherUnable to load query from file: queries//interactive-update-1-add-person-companies.cypherUnable to load query from file: queries//interactive-update-1-add-person-emails.cypherUnable to load query from file: queries//interactive-update-1-add-person-languages.cypherUnable to load query from file: queries//interactive-update-1-add-person-tags.cypherUnable to load query from file: queries//interactive-update-1-add-person-universities.cypherUnable to load query from file: queries//interactive-update-4-add-forum.cypherUnable to load query from file: queries//interactive-update-4-add-forum-tags.cypherUnable to load query from file: queries//interactive-update-6-add-post.cypherUnable to load query from file: queries//interactive-update-6-add-post-tags.cypherUnable to load query from file: queries//interactive-update-7-add-comment.cypherUnable to load query from file: queries//interactive-update-7-add-comment-tags.cypherUnable to load query from file: queries//interactive-update-6-add-post-content.cypherUnable to load query from file: queries//interactive-update-6-add-post-imagefile.cypherExecuteWorkloadMode  Loaded DB: org.ldbcouncil.snb.impls.workloads.cypher.interactive.CypherInteractiveDb
+ExecuteWorkloadMode  Instantiating WorkloadRunner
+WorkloadStatusThread  2026/07/04 04:15:30 +0200 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 04:15:31 +0200 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 04:15:32 +0200 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 04:15:33 +0200 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 04:15:34 +0200 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 04:15:35 +0200 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 04:15:36 +0200 Runtime [00:01.740 (m:s.ms)], Operations [2], Last [00:00.626 (m:s.ms)], Throughput (Total) [1.15] (Last 1s) [1.15]
+WorkloadStatusThread  2026/07/04 04:15:38 +0200 Runtime [00:02.841 (m:s.ms)], Operations [9], Last [00:00.432 (m:s.ms)], Throughput (Total) [3.17] (Last 2s) [3.17]
+WorkloadStatusThread  2026/07/04 04:15:39 +0200 Runtime [00:03.941 (m:s.ms)], Operations [15], Last [00:00.089 (m:s.ms)], Throughput (Total) [3.81] (Last 3s) [3.81]
+WorkloadStatusThread  2026/07/04 04:15:40 +0200 Runtime [00:05.042 (m:s.ms)], Operations [15], Last [00:01.190 (m:s.ms)], Throughput (Total) [2.98] (Last 3s) [3.94]
+WorkloadStatusThread  2026/07/04 04:15:41 +0200 Runtime [00:06.143 (m:s.ms)], Operations [19], Last [00:00.097 (m:s.ms)], Throughput (Total) [3.09] (Last 3s) [3.03]
+WorkloadStatusThread  2026/07/04 04:15:42 +0200 Runtime [00:07.243 (m:s.ms)], Operations [20], Last [00:00.360 (m:s.ms)], Throughput (Total) [2.76] (Last 3s) [1.51]
+WorkloadStatusThread  2026/07/04 04:15:43 +0200 Runtime [00:08.344 (m:s.ms)], Operations [20], Last [00:01.461 (m:s.ms)], Throughput (Total) [2.40] (Last 3s) [1.51]
+WorkloadStatusThread  2026/07/04 04:15:44 +0200 Runtime [00:09.445 (m:s.ms)], Operations [27], Last [00:00.010 (m:s.ms)], Throughput (Total) [2.86] (Last 3s) [2.42]
+WorkloadStatusThread  2026/07/04 04:15:45 +0200 Runtime [00:10.546 (m:s.ms)], Operations [33], Last [00:00.239 (m:s.ms)], Throughput (Total) [3.13] (Last 3s) [3.94]
+WorkloadStatusThread  2026/07/04 04:15:46 +0200 Runtime [00:11.647 (m:s.ms)], Operations [34], Last [00:00.330 (m:s.ms)], Throughput (Total) [2.92] (Last 3s) [4.24]
+WorkloadStatusThread  2026/07/04 04:15:47 +0200 Runtime [00:12.747 (m:s.ms)], Operations [42], Last [00:00.277 (m:s.ms)], Throughput (Total) [3.29] (Last 3s) [4.54]
+WorkloadStatusThread  2026/07/04 04:15:49 +0200 Runtime [00:13.848 (m:s.ms)], Operations [47], Last [00:00.050 (m:s.ms)], Throughput (Total) [3.39] (Last 3s) [4.24]
+WorkloadStatusThread  2026/07/04 04:15:50 +0200 Runtime [00:14.949 (m:s.ms)], Operations [55], Last [00:00.034 (m:s.ms)], Throughput (Total) [3.68] (Last 3s) [6.36]
+WorkloadStatusThread  2026/07/04 04:15:51 +0200 Runtime [00:16.050 (m:s.ms)], Operations [71], Last [00:00.513 (m:s.ms)], Throughput (Total) [4.42] (Last 3s) [8.78]
+WorkloadStatusThread  2026/07/04 04:15:52 +0200 Runtime [00:17.151 (m:s.ms)], Operations [83], Last [00:00.041 (m:s.ms)], Throughput (Total) [4.84] (Last 3s) [10.90]
+Shutting down status thread...
+ExecuteWorkloadMode  Shutting down workload...
+ExecuteWorkloadMode  Shutting down completion time service...
+ExecuteWorkloadMode  Shutting down metrics collection service...
+ExecuteWorkloadMode  
+------------------------------------------------------------------------------
+Operation Count:                        91
+Duration:                               00:17.469.000 (m:s.ms.us)
+Throughput:                             5.21 (op/s)
+------------------------------------------------------------------------------
+    LdbcQuery1                     Count: 1    Mean: 566.00 ms
+    LdbcQuery10                    Count: 1    Mean: 1,666.00 ms
+    LdbcQuery11                    Count: 2    Mean: 795.00 ms
+    LdbcQuery13                    Count: 1    Mean: 540.00 ms
+    LdbcQuery2                     Count: 1    Mean: 452.00 ms
+    LdbcQuery4                     Count: 1    Mean: 308.00 ms
+    LdbcShortQuery1PersonProfile   Count: 7    Mean: 68.71 ms
+    LdbcShortQuery2PersonPosts     Count: 7    Mean: 122.71 ms
+    LdbcShortQuery3PersonFriends   Count: 7    Mean: 81.00 ms
+    LdbcShortQuery4MessageContent  Count: 6    Mean: 73.83 ms
+    LdbcShortQuery5MessageCreator  Count: 6    Mean: 74.17 ms
+    LdbcShortQuery6MessageForum    Count: 6    Mean: 95.33 ms
+    LdbcShortQuery7MessageReplies  Count: 6    Mean: 94.00 ms
+    LdbcUpdate2AddPostLike         Count: 9    Mean: 63.11 ms
+    LdbcUpdate3AddCommentLike      Count: 1    Mean: 129.00 ms
+    LdbcUpdate5AddForumMembership  Count: 19   Mean: 101.58 ms
+    LdbcUpdate7AddComment          Count: 10   Mean: 130.90 ms
+------------------------------------------------------------------------------
+
+ExecuteWorkloadMode  Exporting workload metrics to /home/denny/ldbc-snb/ldbc_snb_interactive_v1_impls/cypher/results/LDBC-SNB-WARMUP--results.json...
+ExecuteWorkloadMode  Validating workload results...
+ExecuteWorkloadMode  Exporting workload results validation to: /home/denny/ldbc-snb/ldbc_snb_interactive_v1_impls/cypher/results/LDBC-SNB-WARMUP--validation.json
+ExecuteWorkloadMode  PASSED SCHEDULE AUDIT -- workload operations executed to schedule
+ExecuteWorkloadMode  
+ -----------------
+ --- Run Phase ---
+ -----------------
+ExecuteWorkloadMode  Scanning workload streams to calculate their limits...
+WorkloadStreams  Scanned 102 of 100 - OFFSET
+WorkloadStreams  Scanned 258 of 250 - RUN
+ExecuteWorkloadMode  Loaded workload: org.ldbcouncil.snb.driver.workloads.interactive.LdbcSnbInteractiveWorkload
+ExecuteWorkloadMode  Retrieving workload stream: LdbcSnbInteractiveWorkload
+ExecuteWorkloadMode  Instantiating WorkloadRunner
+WorkloadStatusThread  2026/07/04 04:15:58 +0200 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 04:15:59 +0200 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 04:16:00 +0200 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 04:16:01 +0200 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 04:16:02 +0200 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 04:16:03 +0200 Runtime [00:00.530 (m:s.ms)], Operations [3], Last [00:00.058 (m:s.ms)], Throughput (Total) [5.66] (Last 0s) [5.66]
+WorkloadStatusThread  2026/07/04 04:16:04 +0200 Runtime [00:01.631 (m:s.ms)], Operations [6], Last [00:00.078 (m:s.ms)], Throughput (Total) [3.68] (Last 1s) [3.68]
+WorkloadStatusThread  2026/07/04 04:16:05 +0200 Runtime [00:02.731 (m:s.ms)], Operations [6], Last [00:01.178 (m:s.ms)], Throughput (Total) [2.20] (Last 2s) [2.20]
+WorkloadStatusThread  2026/07/04 04:16:07 +0200 Runtime [00:03.832 (m:s.ms)], Operations [13], Last [00:00.025 (m:s.ms)], Throughput (Total) [3.39] (Last 3s) [3.03]
+WorkloadStatusThread  2026/07/04 04:16:08 +0200 Runtime [00:04.933 (m:s.ms)], Operations [31], Last [00:00.022 (m:s.ms)], Throughput (Total) [6.28] (Last 3s) [7.57]
+WorkloadStatusThread  2026/07/04 04:16:09 +0200 Runtime [00:06.033 (m:s.ms)], Operations [35], Last [00:00.534 (m:s.ms)], Throughput (Total) [5.80] (Last 3s) [8.78]
+WorkloadStatusThread  2026/07/04 04:16:10 +0200 Runtime [00:07.134 (m:s.ms)], Operations [62], Last [00:00.042 (m:s.ms)], Throughput (Total) [8.69] (Last 3s) [14.84]
+WorkloadStatusThread  2026/07/04 04:16:11 +0200 Runtime [00:08.235 (m:s.ms)], Operations [69], Last [00:00.570 (m:s.ms)], Throughput (Total) [8.38] (Last 3s) [11.51]
+WorkloadStatusThread  2026/07/04 04:16:12 +0200 Runtime [00:09.335 (m:s.ms)], Operations [78], Last [00:00.020 (m:s.ms)], Throughput (Total) [8.36] (Last 3s) [13.02]
+WorkloadStatusThread  2026/07/04 04:16:13 +0200 Runtime [00:10.436 (m:s.ms)], Operations [84], Last [00:00.335 (m:s.ms)], Throughput (Total) [8.05] (Last 3s) [6.66]
+WorkloadStatusThread  2026/07/04 04:16:14 +0200 Runtime [00:11.536 (m:s.ms)], Operations [88], Last [00:00.882 (m:s.ms)], Throughput (Total) [7.63] (Last 3s) [5.76]
+WorkloadStatusThread  2026/07/04 04:16:15 +0200 Runtime [00:12.637 (m:s.ms)], Operations [96], Last [00:00.076 (m:s.ms)], Throughput (Total) [7.60] (Last 3s) [5.45]
+WorkloadStatusThread  2026/07/04 04:16:16 +0200 Runtime [00:13.737 (m:s.ms)], Operations [97], Last [00:00.875 (m:s.ms)], Throughput (Total) [7.06] (Last 3s) [3.94]
+WorkloadStatusThread  2026/07/04 04:16:18 +0200 Runtime [00:14.838 (m:s.ms)], Operations [97], Last [00:01.976 (m:s.ms)], Throughput (Total) [6.54] (Last 3s) [2.73]
+WorkloadStatusThread  2026/07/04 04:16:19 +0200 Runtime [00:15.939 (m:s.ms)], Operations [108], Last [00:00.129 (m:s.ms)], Throughput (Total) [6.78] (Last 3s) [3.63]
+WorkloadStatusThread  2026/07/04 04:16:20 +0200 Runtime [00:17.040 (m:s.ms)], Operations [126], Last [00:00.284 (m:s.ms)], Throughput (Total) [7.39] (Last 3s) [8.78]
+WorkloadStatusThread  2026/07/04 04:16:21 +0200 Runtime [00:18.140 (m:s.ms)], Operations [145], Last [00:00.035 (m:s.ms)], Throughput (Total) [7.99] (Last 3s) [14.54]
+WorkloadStatusThread  2026/07/04 04:16:22 +0200 Runtime [00:19.241 (m:s.ms)], Operations [168], Last [00:00.023 (m:s.ms)], Throughput (Total) [8.73] (Last 3s) [18.17]
+WorkloadStatusThread  2026/07/04 04:16:23 +0200 Runtime [00:20.341 (m:s.ms)], Operations [182], Last [00:00.233 (m:s.ms)], Throughput (Total) [8.95] (Last 3s) [16.96]
+WorkloadStatusThread  2026/07/04 04:16:24 +0200 Runtime [00:21.442 (m:s.ms)], Operations [183], Last [00:00.257 (m:s.ms)], Throughput (Total) [8.53] (Last 3s) [11.51]
+WorkloadStatusThread  2026/07/04 04:16:25 +0200 Runtime [00:22.542 (m:s.ms)], Operations [192], Last [00:00.063 (m:s.ms)], Throughput (Total) [8.52] (Last 3s) [7.27]
+WorkloadStatusThread  2026/07/04 04:16:26 +0200 Runtime [00:23.643 (m:s.ms)], Operations [216], Last [00:00.038 (m:s.ms)], Throughput (Total) [9.14] (Last 3s) [10.30]
+WorkloadStatusThread  2026/07/04 04:16:27 +0200 Runtime [00:24.744 (m:s.ms)], Operations [239], Last [00:00.328 (m:s.ms)], Throughput (Total) [9.66] (Last 3s) [16.96]
+WorkloadStatusThread  2026/07/04 04:16:29 +0200 Runtime [00:25.844 (m:s.ms)], Operations [250], Last [00:00.005 (m:s.ms)], Throughput (Total) [9.67] (Last 3s) [17.57]
+Shutting down status thread...
+ExecuteWorkloadMode  Shutting down workload...
+ExecuteWorkloadMode  Shutting down completion time service...
+ExecuteWorkloadMode  Shutting down metrics collection service...
+ExecuteWorkloadMode  
+------------------------------------------------------------------------------
+Operation Count:                        258
+Duration:                               00:26.163.000 (m:s.ms.us)
+Throughput:                             9.86 (op/s)
+Start Time (Central European Standard Time):2026-07-04 - 04:16:03.141
+Finish Time (Central European Standard Time):2026-07-04 - 04:16:29.304
+------------------------------------------------------------------------------
+    LdbcQuery1
+        Units:              MILLISECONDS
+        Count:              2
+        Min:                116
+        Max:                256
+        Mean:               186.00
+        50th Percentile:    116
+        90th Percentile:    256
+        95th Percentile:    256
+        99th Percentile:    256
+    LdbcQuery10
+        Units:              MILLISECONDS
+        Count:              2
+        Min:                523
+        Max:                690
+        Mean:               606.50
+        50th Percentile:    523
+        90th Percentile:    690
+        95th Percentile:    690
+        99th Percentile:    690
+    LdbcQuery11
+        Units:              MILLISECONDS
+        Count:              4
+        Min:                57
+        Max:                104
+        Mean:               81.25
+        50th Percentile:    81
+        90th Percentile:    104
+        95th Percentile:    104
+        99th Percentile:    104
+    LdbcQuery12
+        Units:              MILLISECONDS
+        Count:              2
+        Min:                537
+        Max:                1,019
+        Mean:               778.00
+        50th Percentile:    537
+        90th Percentile:    1,019
+        95th Percentile:    1,019
+        99th Percentile:    1,019
+    LdbcQuery13
+        Units:              MILLISECONDS
+        Count:              4
+        Min:                42
+        Max:                99
+        Mean:               58.50
+        50th Percentile:    44
+        90th Percentile:    99
+        95th Percentile:    99
+        99th Percentile:    99
+    LdbcQuery14
+        Units:              MILLISECONDS
+        Count:              1
+        Min:                1,235
+        Max:                1,235
+        Mean:               1,235.00
+        50th Percentile:    1,235
+        90th Percentile:    1,235
+        95th Percentile:    1,235
+        99th Percentile:    1,235
+    LdbcQuery2
+        Units:              MILLISECONDS
+        Count:              1
+        Min:                162
+        Max:                162
+        Mean:               162.00
+        50th Percentile:    162
+        90th Percentile:    162
+        95th Percentile:    162
+        99th Percentile:    162
+    LdbcQuery3
+        Units:              MILLISECONDS
+        Count:              1
+        Min:                2,108
+        Max:                2,108
+        Mean:               2,108.00
+        50th Percentile:    2,108
+        90th Percentile:    2,108
+        95th Percentile:    2,108
+        99th Percentile:    2,108
+    LdbcQuery4
+        Units:              MILLISECONDS
+        Count:              1
+        Min:                105
+        Max:                105
+        Mean:               105.00
+        50th Percentile:    105
+        90th Percentile:    105
+        95th Percentile:    105
+        99th Percentile:    105
+    LdbcQuery5
+        Units:              MILLISECONDS
+        Count:              1
+        Min:                809
+        Max:                809
+        Mean:               809.00
+        50th Percentile:    809
+        90th Percentile:    809
+        95th Percentile:    809
+        99th Percentile:    809
+    LdbcQuery7
+        Units:              MILLISECONDS
+        Count:              1
+        Min:                241
+        Max:                241
+        Mean:               241.00
+        50th Percentile:    241
+        90th Percentile:    241
+        95th Percentile:    241
+        99th Percentile:    241
+    LdbcQuery8
+        Units:              MILLISECONDS
+        Count:              2
+        Min:                40
+        Max:                225
+        Mean:               132.50
+        50th Percentile:    40
+        90th Percentile:    225
+        95th Percentile:    225
+        99th Percentile:    225
+    LdbcShortQuery1PersonProfile
+        Units:              MILLISECONDS
+        Count:              23
+        Min:                34
+        Max:                101
+        Mean:               50.48
+        50th Percentile:    40
+        90th Percentile:    64
+        95th Percentile:    100
+        99th Percentile:    101
+    LdbcShortQuery2PersonPosts
+        Units:              MILLISECONDS
+        Count:              23
+        Min:                36
+        Max:                103
+        Mean:               57.52
+        50th Percentile:    54
+        90th Percentile:    89
+        95th Percentile:    92
+        99th Percentile:    103
+    LdbcShortQuery3PersonFriends
+        Units:              MILLISECONDS
+        Count:              23
+        Min:                32
+        Max:                103
+        Mean:               53.65
+        50th Percentile:    45
+        90th Percentile:    89
+        95th Percentile:    101
+        99th Percentile:    103
+    LdbcShortQuery4MessageContent
+        Units:              MILLISECONDS
+        Count:              25
+        Min:                33
+        Max:                64
+        Mean:               42.00
+        50th Percentile:    36
+        90th Percentile:    62
+        95th Percentile:    63
+        99th Percentile:    64
+    LdbcShortQuery5MessageCreator
+        Units:              MILLISECONDS
+        Count:              25
+        Min:                32
+        Max:                92
+        Mean:               46.04
+        50th Percentile:    36
+        90th Percentile:    64
+        95th Percentile:    89
+        99th Percentile:    92
+    LdbcShortQuery6MessageForum
+        Units:              MILLISECONDS
+        Count:              25
+        Min:                33
+        Max:                89
+        Mean:               47.36
+        50th Percentile:    37
+        90th Percentile:    65
+        95th Percentile:    87
+        99th Percentile:    89
+    LdbcShortQuery7MessageReplies
+        Units:              MILLISECONDS
+        Count:              24
+        Min:                33
+        Max:                104
+        Mean:               50.21
+        50th Percentile:    40
+        90th Percentile:    85
+        95th Percentile:    88
+        99th Percentile:    104
+    LdbcUpdate2AddPostLike
+        Units:              MILLISECONDS
+        Count:              5
+        Min:                41
+        Max:                58
+        Mean:               47.80
+        50th Percentile:    48
+        90th Percentile:    58
+        95th Percentile:    58
+        99th Percentile:    58
+    LdbcUpdate3AddCommentLike
+        Units:              MILLISECONDS
+        Count:              4
+        Min:                38
+        Max:                49
+        Mean:               42.00
+        50th Percentile:    39
+        90th Percentile:    49
+        95th Percentile:    49
+        99th Percentile:    49
+    LdbcUpdate4AddForum
+        Units:              MILLISECONDS
+        Count:              2
+        Min:                53
+        Max:                117
+        Mean:               85.00
+        50th Percentile:    53
+        90th Percentile:    117
+        95th Percentile:    117
+        99th Percentile:    117
+    LdbcUpdate5AddForumMembership
+        Units:              MILLISECONDS
+        Count:              24
+        Min:                36
+        Max:                74
+        Mean:               46.62
+        50th Percentile:    41
+        90th Percentile:    63
+        95th Percentile:    69
+        99th Percentile:    74
+    LdbcUpdate6AddPost
+        Units:              MILLISECONDS
+        Count:              22
+        Min:                39
+        Max:                142
+        Mean:               56.68
+        50th Percentile:    60
+        90th Percentile:    63
+        95th Percentile:    63
+        99th Percentile:    142
+    LdbcUpdate7AddComment
+        Units:              MILLISECONDS
+        Count:              10
+        Min:                43
+        Max:                97
+        Mean:               58.60
+        50th Percentile:    50
+        90th Percentile:    73
+        95th Percentile:    97
+        99th Percentile:    97
+    LdbcUpdate8AddFriendship
+        Units:              MILLISECONDS
+        Count:              1
+        Min:                93
+        Max:                93
+        Mean:               93.00
+        50th Percentile:    93
+        90th Percentile:    93
+        95th Percentile:    93
+        99th Percentile:    93
+------------------------------------------------------------------------------
+
+ExecuteWorkloadMode  Exporting workload metrics to /home/denny/ldbc-snb/ldbc_snb_interactive_v1_impls/cypher/results/LDBC-SNB-results.json...
+ExecuteWorkloadMode  Validating workload results...
+ExecuteWorkloadMode  Exporting workload results validation to: /home/denny/ldbc-snb/ldbc_snb_interactive_v1_impls/cypher/results/LDBC-SNB-validation.json
+ExecuteWorkloadMode  PASSED SCHEDULE AUDIT -- workload operations executed to schedule
+ExecuteWorkloadMode  Shutting down database connector...
+ExecuteWorkloadMode  Database connector shutdown successfully in: PT0.212303S
+ExecuteWorkloadMode  Workload completed successfully

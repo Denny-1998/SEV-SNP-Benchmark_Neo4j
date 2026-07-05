@@ -1,0 +1,279 @@
+python3 analyze_results\ \(2\).py ResultsRun1 ResultsRun2 ResultsRun3 ResultsRun4 ResultsRun5
+==================================================================================================================================
+MASTER TABLE — every configuration, sorted by core count / variant / load / location
+==================================================================================================================================
+cores  variant    load location     status  ops/sec cpu_usr% cpu_sys%   mem%  disk%
+-----------------------------------------------------------------------------------
+    2 baseline     low    local      CLEAN    10.10    19.68     2.16  29.84   0.44
+    2 baseline     low   remote      CLEAN     9.91    25.11     0.97  27.46   0.15
+    2 baseline  medium    local AUDIT-FAIL    44.66    81.12     5.50  30.87   0.89
+    2 baseline  medium   remote      CLEAN    21.59    40.55     1.49  27.45   0.22
+    2 baseline    high    local AUDIT-FAIL    45.78    80.86     5.29  31.04   0.97
+    2 baseline    high   remote      CLEAN    22.20    40.80     1.47  27.87   0.25
+    2      sev     low    local      CLEAN     9.99    17.98     2.24  31.15   0.44
+    2      sev     low   remote      CLEAN     9.93    24.00     1.05  27.95   0.13
+    2      sev  medium    local AUDIT-FAIL    46.81    80.57     6.11  31.34   0.79
+    2      sev  medium   remote      CLEAN    22.69    38.11     1.54  27.40   0.24
+    2      sev    high    local AUDIT-FAIL    48.69    79.41     5.87  31.34   2.11
+    2      sev    high   remote      CLEAN    22.88    38.70     1.59  27.92   0.19
+    4 baseline     low    local      CLEAN    10.09     9.06     1.27  18.70   0.28
+    4 baseline     low   remote      CLEAN     9.88    13.23     0.55  14.97   0.15
+    4 baseline  medium    local CLEAN(1/5)    88.54    64.81     5.33  17.96   1.27
+    4 baseline  medium   remote      CLEAN    39.64    29.41     1.07  16.93   0.24
+    4 baseline    high    local AUDIT-FAIL    88.90    67.22     5.37  20.31   1.21
+    4 baseline    high   remote      CLEAN    40.89    29.64     1.10  14.53   0.24
+    4      sev     low    local      CLEAN    10.11     8.23     1.39  19.95   0.27
+    4      sev     low   remote      CLEAN     9.79    12.22     0.58  18.11   0.15
+    4      sev  medium    local      CLEAN    89.22    64.75     6.09  19.95   1.27
+    4      sev  medium   remote      CLEAN    42.08    27.93     1.17  14.45   0.24
+    4      sev    high    local AUDIT-FAIL    92.53    67.14     6.02  19.07   1.11
+    4      sev    high   remote      CLEAN    43.36    28.09     1.16  17.02   0.26
+    8 baseline     low    local      CLEAN    10.09     4.39     1.01  10.36   0.25
+    8 baseline     low   remote      CLEAN     9.74     6.27     0.29   8.86   0.14
+    8 baseline  medium    local      CLEAN    96.19    35.03     3.47  12.39   1.42
+    8 baseline  medium   remote      CLEAN    58.68    15.09     0.61   8.89   0.27
+    8 baseline    high    local AUDIT-FAIL   152.69    51.74     5.44  10.77   1.50
+    8 baseline    high   remote      CLEAN    51.84    16.03     0.64   9.97   0.28
+    8      sev     low    local      CLEAN    10.12     3.80     0.96  10.55   0.22
+    8      sev     low   remote      CLEAN     9.70     5.65     0.30   9.24   0.14
+    8      sev  medium    local      CLEAN    96.51    32.72     3.64  12.07   1.23
+    8      sev  medium   remote      CLEAN    62.83    13.83     0.64   9.02   0.29
+    8      sev    high    local AUDIT-FAIL   169.10    49.42     5.72  11.06   1.45
+    8      sev    high   remote      CLEAN    50.69    14.90     0.68   8.95   0.28
+   16 baseline     low    local      CLEAN    10.19     2.26     0.65   7.14   0.22
+   16 baseline     low   remote      CLEAN     9.75     3.31     0.16   6.54   0.14
+   16 baseline  medium    local      CLEAN    96.25    15.87     1.83   7.38   1.46
+   16 baseline  medium   remote      CLEAN    60.01     8.79     0.41   6.60   0.29
+   16 baseline    high    local AUDIT-FAIL   266.23    36.91     4.03   7.72   1.91
+   16 baseline    high   remote      CLEAN    58.23     8.46     0.39   6.75   0.27
+   16      sev     low    local      CLEAN    10.19     1.98     0.76   7.13   0.23
+   16      sev     low   remote      CLEAN     9.75     2.99     0.21   6.42   0.15
+   16      sev  medium    local      CLEAN    96.88    14.95     2.05   7.22   1.27
+   16      sev  medium   remote      CLEAN    63.91     8.54     0.54   6.34   0.32
+   16      sev    high    local AUDIT-FAIL   269.17    34.43     4.28   7.57   1.88
+   16      sev    high   remote      CLEAN    58.94     8.30     0.49   6.46   0.28
+
+Saved: master_table.png
+==============================================================================================================
+PEAK RESOURCE UTILIZATION (local runs only — worst single sample per configuration)
+==============================================================================================================
+cores  variant    load     status peak_cpu_usr% peak_cpu_sys% peak_mem% peak_disk%
+----------------------------------------------------------------------------------
+    2 baseline     low      CLEAN         82.26          7.96     32.23      13.32
+    2 baseline  medium AUDIT-FAIL         96.70          9.81     33.46       6.06
+    2 baseline    high AUDIT-FAIL         96.80          9.19     32.14       7.80
+    2      sev     low      CLEAN         82.53          9.25     32.27      15.30
+    2      sev  medium AUDIT-FAIL         96.30         11.02     32.39       6.32
+    2      sev    high AUDIT-FAIL         96.70          9.52     33.05      12.64
+    4 baseline     low      CLEAN         35.36          3.26     21.19       3.80
+    4 baseline  medium CLEAN(1/5)         94.94          9.53     18.39       3.76
+    4 baseline    high AUDIT-FAIL         95.39          9.96     21.30       5.94
+    4      sev     low      CLEAN         36.39          3.69     21.74       3.64
+    4      sev  medium      CLEAN         94.44         10.65     21.76       3.64
+    4      sev    high AUDIT-FAIL         94.24         10.24     22.07       6.84
+    8 baseline     low      CLEAN         19.09          1.62     11.02       3.08
+    8 baseline  medium      CLEAN         91.77          6.53     15.79       3.12
+    8 baseline    high AUDIT-FAIL         92.42         12.53     11.98       7.68
+    8      sev     low      CLEAN         17.19          1.68     11.00       2.80
+    8      sev  medium      CLEAN         90.77          7.65     16.10       2.32
+    8      sev    high AUDIT-FAIL         91.05         13.31     12.17       5.46
+   16 baseline     low      CLEAN         12.45          1.20      7.33       0.62
+   16 baseline  medium      CLEAN         57.10          3.38      7.64       3.10
+   16 baseline    high AUDIT-FAIL         83.89         12.60      8.53       9.46
+   16      sev     low      CLEAN         10.91          1.26      7.43       0.62
+   16      sev  medium      CLEAN         56.47          3.98      7.54       2.32
+   16      sev    high AUDIT-FAIL         81.55         13.20      8.42       7.16
+
+====================================================================================================
+CATEGORY LATENCY (p99, ms) — per LDBC operation category
+====================================================================================================
+cores  variant    load location     status  short_p99  complex_p99  update_p99
+------------------------------------------------------------------------------
+    2 baseline     low    local      CLEAN      12.53       446.35       11.62
+    2 baseline     low   remote      CLEAN      97.67       455.11      107.65
+    2 baseline  medium    local AUDIT-FAIL      19.12       810.82       32.95
+    2 baseline  medium   remote      CLEAN     102.44       685.77      152.44
+    2 baseline    high    local AUDIT-FAIL      16.79       860.69       34.12
+    2 baseline    high   remote      CLEAN      95.67       704.52      172.15
+    2      sev     low    local      CLEAN      11.10       426.50       11.82
+    2      sev     low   remote      CLEAN     100.09       443.75      102.81
+    2      sev  medium    local AUDIT-FAIL      17.93       760.63       30.37
+    2      sev  medium   remote      CLEAN      93.30       638.01      146.15
+    2      sev    high    local AUDIT-FAIL      15.76       809.95       28.67
+    2      sev    high   remote      CLEAN      97.61       654.74      155.23
+    4 baseline     low    local      CLEAN       5.61       354.69        6.14
+    4 baseline     low   remote      CLEAN      94.12       345.26       87.56
+    4 baseline  medium    local CLEAN(1/5)      12.34       752.69       18.81
+    4 baseline  medium   remote      CLEAN      86.16       636.83      143.68
+    4 baseline    high    local AUDIT-FAIL      15.60       908.99       21.40
+    4 baseline    high   remote      CLEAN      85.36       682.02      134.41
+    4      sev     low    local      CLEAN       5.40       326.59        6.75
+    4      sev     low   remote      CLEAN     100.94       329.42       84.15
+    4      sev  medium    local      CLEAN      13.10       705.30       20.76
+    4      sev  medium   remote      CLEAN     112.66       583.43      152.62
+    4      sev    high    local AUDIT-FAIL      13.41       895.08       20.49
+    4      sev    high   remote      CLEAN      90.00       626.35      134.56
+    8 baseline     low    local      CLEAN       4.24       340.00        5.92
+    8 baseline     low   remote      CLEAN     100.85       288.95       90.43
+    8 baseline  medium    local      CLEAN       6.55       471.48        9.04
+    8 baseline  medium   remote      CLEAN     104.39       480.48      117.03
+    8 baseline    high    local AUDIT-FAIL      16.29       890.08       18.92
+    8 baseline    high   remote      CLEAN      74.81       666.29      123.56
+    8      sev     low    local      CLEAN       4.16       303.66        5.68
+    8      sev     low   remote      CLEAN     101.65       274.76       85.00
+    8      sev  medium    local      CLEAN       6.04       429.88        8.02
+    8      sev  medium   remote      CLEAN      76.36       457.95      108.24
+    8      sev    high    local AUDIT-FAIL      14.58       830.01       18.30
+    8      sev    high   remote      CLEAN      82.48       619.59      122.01
+   16 baseline     low    local      CLEAN       3.76       330.26        5.25
+   16 baseline     low   remote      CLEAN     101.90       280.94      103.29
+   16 baseline  medium    local      CLEAN       4.37       383.38        5.70
+   16 baseline  medium   remote      CLEAN      75.34       377.02       96.79
+   16 baseline    high    local AUDIT-FAIL      16.10       961.66       17.84
+   16 baseline    high   remote      CLEAN      82.43       529.82      106.19
+   16      sev     low    local      CLEAN       3.91       309.41        5.66
+   16      sev     low   remote      CLEAN     103.62       265.38       84.56
+   16      sev  medium    local      CLEAN       4.23       357.83        6.11
+   16      sev  medium   remote      CLEAN      76.12       362.66      106.17
+   16      sev    high    local AUDIT-FAIL      15.81       940.20       17.27
+   16      sev    high   remote      CLEAN      81.76       523.45       98.36
+
+====================================================================================================
+CROSS-RUN VARIABILITY — Throughput (ops/sec) (remote)
+====================================================================================================
+cores  variant    load     status   n     mean   median      min      max
+-------------------------------------------------------------------------
+    2 baseline     low      CLEAN   5     9.91     9.86     9.85    10.01
+    2 baseline  medium      CLEAN   5    21.59    21.39    20.86    22.56
+    2 baseline    high      CLEAN   5    22.20    22.74    20.73    23.06
+    2      sev     low      CLEAN   5     9.93     9.86     9.86    10.09
+    2      sev  medium      CLEAN   5    22.69    22.16    21.67    23.96
+    2      sev    high      CLEAN   5    22.88    23.07    21.62    23.54
+    4 baseline     low      CLEAN   5     9.88     9.85     9.85     9.97
+    4 baseline  medium      CLEAN   5    39.64    38.74    37.92    41.91
+    4 baseline    high      CLEAN   5    40.89    40.73    39.83    42.50
+    4      sev     low      CLEAN   5     9.79     9.75     9.75     9.86
+    4      sev  medium      CLEAN   5    42.08    42.05    41.05    43.54
+    4      sev    high      CLEAN   5    43.36    43.20    41.64    45.05
+    8 baseline     low      CLEAN   5     9.74     9.74     9.74     9.75
+    8 baseline  medium      CLEAN   5    58.68    59.72    53.95    62.39
+    8 baseline    high      CLEAN   5    51.84    50.34    48.26    60.69
+    8      sev     low      CLEAN   5     9.70     9.75     9.48     9.75
+    8      sev  medium      CLEAN   5    62.83    62.12    61.77    64.60
+    8      sev    high      CLEAN   5    50.69    48.71    44.82    57.60
+   16 baseline     low      CLEAN   5     9.75     9.75     9.75     9.75
+   16 baseline  medium      CLEAN   5    60.01    59.60    56.57    64.77
+   16 baseline    high      CLEAN   5    58.23    61.71    49.68    62.93
+   16      sev     low      CLEAN   5     9.75     9.75     9.75     9.75
+   16      sev  medium      CLEAN   5    63.91    63.70    61.78    65.77
+   16      sev    high      CLEAN   5    58.94    56.60    53.71    66.35
+
+====================================================================================================
+CROSS-RUN VARIABILITY — CPU system % (local)
+====================================================================================================
+cores  variant    load     status   n     mean   median      min      max
+-------------------------------------------------------------------------
+    2 baseline     low      CLEAN   5     2.16     2.13     1.95     2.40
+    2 baseline  medium AUDIT-FAIL   5     5.50     5.51     5.35     5.65
+    2 baseline    high AUDIT-FAIL   5     5.29     5.26     5.18     5.50
+    2      sev     low      CLEAN   5     2.24     2.26     2.15     2.37
+    2      sev  medium AUDIT-FAIL   5     6.11     6.13     5.93     6.22
+    2      sev    high AUDIT-FAIL   5     5.87     5.81     5.69     6.23
+    4 baseline     low      CLEAN   5     1.27     1.41     1.00     1.49
+    4 baseline  medium CLEAN(1/5)   1     5.33     5.33     5.33     5.33
+    4 baseline    high AUDIT-FAIL   5     5.37     5.38     5.12     5.66
+    4      sev     low      CLEAN   5     1.39     1.38     1.35     1.44
+    4      sev  medium      CLEAN   5     6.09     5.98     5.80     6.35
+    4      sev    high AUDIT-FAIL   5     6.02     6.07     5.78     6.15
+    8 baseline     low      CLEAN   5     1.01     1.01     0.92     1.07
+    8 baseline  medium      CLEAN   5     3.47     3.49     3.37     3.54
+    8 baseline    high AUDIT-FAIL   5     5.44     5.58     5.11     5.64
+    8      sev     low      CLEAN   5     0.96     0.95     0.91     1.04
+    8      sev  medium      CLEAN   5     3.64     3.62     3.50     3.78
+    8      sev    high AUDIT-FAIL   5     5.72     5.71     5.52     5.99
+   16 baseline     low      CLEAN   5     0.65     0.80     0.40     0.83
+   16 baseline  medium      CLEAN   5     1.83     1.91     1.58     2.07
+   16 baseline    high AUDIT-FAIL   5     4.03     4.12     3.63     4.17
+   16      sev     low      CLEAN   5     0.76     0.76     0.75     0.77
+   16      sev  medium      CLEAN   5     2.05     2.05     2.00     2.09
+   16      sev    high AUDIT-FAIL   5     4.28     4.26     4.21     4.34
+
+====================================================================================================
+EFFECT SIZE (Cohen's d) — baseline vs sev, throughput (remote)
+====================================================================================================
+|d| < 0.2 negligible | 0.2-0.5 small | 0.5-0.8 medium | > 0.8 large
+Positive d = baseline higher than sev. Only computed from CLEAN runs.
+
+cores    load location n_base  n_sev         cohens_d
+-----------------------------------------------------
+    2     low    local      5      5   +0.51 (medium)
+    2     low   remote      5      5 -0.14 (negligible)
+    2  medium    local      0      0              n/a  (no CLEAN runs on either side — audit failed every time)
+    2  medium   remote      5      5    -1.25 (large)
+    2    high    local      0      0              n/a  (no CLEAN runs on either side — audit failed every time)
+    2    high   remote      5      5   -0.77 (medium)
+    4     low    local      5      5 -0.14 (negligible)
+    4     low   remote      5      5    +1.51 (large)
+    4  medium    local      1      5              n/a
+    4  medium   remote      5      5    -1.73 (large)
+    4    high    local      0      0              n/a  (no CLEAN runs on either side — audit failed every time)
+    4    high   remote      5      5    -2.09 (large)
+    8     low    local      5      5 -0.15 (negligible)
+    8     low   remote      5      5   +0.56 (medium)
+    8  medium    local      5      5    -0.22 (small)
+    8  medium   remote      5      5    -1.64 (large)
+    8    high    local      0      0              n/a  (no CLEAN runs on either side — audit failed every time)
+    8    high   remote      5      5    +0.22 (small)
+   16     low    local      5      5 -0.02 (negligible)
+   16     low   remote      5      5    -0.89 (large)
+   16  medium    local      5      5   -0.51 (medium)
+   16  medium   remote      5      5    -1.49 (large)
+   16    high    local      0      0              n/a  (no CLEAN runs on either side — audit failed every time)
+   16    high   remote      5      5 -0.13 (negligible)
+
+====================================================================================================
+EFFECT SIZE (Cohen's d) — baseline vs sev, CPU system % (local)
+====================================================================================================
+|d| < 0.2 negligible | 0.2-0.5 small | 0.5-0.8 medium | > 0.8 large
+Positive d = baseline higher than sev. Only computed from CLEAN runs.
+
+cores    load location n_base  n_sev         cohens_d
+-----------------------------------------------------
+    2     low    local      5      5   -0.53 (medium)
+    2     low   remote      5      5    -1.61 (large)
+    2  medium    local      0      0              n/a  (no CLEAN runs on either side — audit failed every time)
+    2  medium   remote      5      5    -0.85 (large)
+    2    high    local      0      0              n/a  (no CLEAN runs on either side — audit failed every time)
+    2    high   remote      5      5    -1.79 (large)
+    4     low    local      5      5   -0.72 (medium)
+    4     low   remote      5      5    -1.04 (large)
+    4  medium    local      1      5              n/a
+    4  medium   remote      5      5    -1.90 (large)
+    4    high    local      0      0              n/a  (no CLEAN runs on either side — audit failed every time)
+    4    high   remote      5      5    -0.99 (large)
+    8     low    local      5      5    +0.83 (large)
+    8     low   remote      5      5    -0.33 (small)
+    8  medium    local      5      5    -1.85 (large)
+    8  medium   remote      5      5    -1.17 (large)
+    8    high    local      0      0              n/a  (no CLEAN runs on either side — audit failed every time)
+    8    high   remote      5      5    -1.40 (large)
+   16     low    local      5      5   -0.71 (medium)
+   16     low   remote      5      5    -2.83 (large)
+   16  medium    local      5      5    -1.34 (large)
+   16  medium   remote      5      5    -3.22 (large)
+   16    high    local      0      0              n/a  (no CLEAN runs on either side — audit failed every time)
+   16    high   remote      5      5    -5.16 (large)
+
+Saved: per_query_percentiles.csv (every query type's own reported percentiles, no blending)
+Saved: throughput_by_cores_remote.png
+Saved: throughput_by_cores_local.png
+Saved: cpu_by_cores_local.png
+Saved: latency_short_read_remote.png
+Saved: latency_complex_read_remote.png
+Saved: latency_update_remote.png
+Saved: cpu_vs_latency.png
+Saved: local_vs_remote_throughput.png
+Saved: local_vs_remote_latency.png
+Saved: utilization_over_time_2core_low_local.png
+Saved: utilization_over_time_2core_high_local.png
+

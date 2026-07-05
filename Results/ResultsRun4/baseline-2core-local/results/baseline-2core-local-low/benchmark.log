@@ -1,0 +1,811 @@
+ExecuteWorkloadMode  Driver Configuration
+ExecuteWorkloadMode  Workload Start Time:	2026-07-04 - 21:07:07.186
+Parameters:
+	Mode:                           execute_benchmark
+	Name:                           LDBC-SNB
+	DB:                             org.ldbcouncil.snb.impls.workloads.cypher.interactive.CypherInteractiveDb
+	Workload:                       org.ldbcouncil.snb.driver.workloads.interactive.LdbcSnbInteractiveWorkload
+	Operation Count:                3,000
+	Warmup Count:                   1,000
+	Skip Count:                     0
+	Worker Threads:                 2
+	Status Display Interval:        00:01.000 (m:s.ms)
+	Time Unit:                      MILLISECONDS
+	Results Directory:              /opt/ldbc-snb/ldbc_snb_interactive_v1_impls/cypher/results
+	Time Compression Ratio:         0.1000000
+	Validation Parameter Size:      0
+	Validation Serialization Check: true
+	Validation Database File:       null
+	Spinner Sleep Duration:         00:00.001 (m:s.ms) / 1 (ms)
+	Print Help:                     false
+	Ignore Scheduled Start Times:   false
+	User-defined parameters:
+		endpoint = bolt://localhost:7687
+		flush_log = false
+		ldbc.snb.interactive.LdbcQuery10_enable = true
+		ldbc.snb.interactive.LdbcQuery11_enable = true
+		ldbc.snb.interactive.LdbcQuery12_enable = true
+		ldbc.snb.interactive.LdbcQuery13_enable = true
+		ldbc.snb.interactive.LdbcQuery14_enable = true
+		ldbc.snb.interactive.LdbcQuery1_enable = true
+		ldbc.snb.interactive.LdbcQuery2_enable = true
+		ldbc.snb.interactive.LdbcQuery3_enable = true
+		ldbc.snb.interactive.LdbcQuery4_enable = true
+		ldbc.snb.interactive.LdbcQuery5_enable = true
+		ldbc.snb.interactive.LdbcQuery6_enable = true
+		ldbc.snb.interactive.LdbcQuery7_enable = true
+		ldbc.snb.interactive.LdbcQuery8_enable = true
+		ldbc.snb.interactive.LdbcQuery9_enable = true
+		ldbc.snb.interactive.LdbcShortQuery1PersonProfile_enable = true
+		ldbc.snb.interactive.LdbcShortQuery2PersonPosts_enable = true
+		ldbc.snb.interactive.LdbcShortQuery3PersonFriends_enable = true
+		ldbc.snb.interactive.LdbcShortQuery4MessageContent_enable = true
+		ldbc.snb.interactive.LdbcShortQuery5MessageCreator_enable = true
+		ldbc.snb.interactive.LdbcShortQuery6MessageForum_enable = true
+		ldbc.snb.interactive.LdbcShortQuery7MessageReplies_enable = true
+		ldbc.snb.interactive.LdbcUpdate1AddPerson_enable = true
+		ldbc.snb.interactive.LdbcUpdate2AddPostLike_enable = true
+		ldbc.snb.interactive.LdbcUpdate3AddCommentLike_enable = true
+		ldbc.snb.interactive.LdbcUpdate4AddForum_enable = true
+		ldbc.snb.interactive.LdbcUpdate5AddForumMembership_enable = true
+		ldbc.snb.interactive.LdbcUpdate6AddPost_enable = true
+		ldbc.snb.interactive.LdbcUpdate7AddComment_enable = true
+		ldbc.snb.interactive.LdbcUpdate8AddFriendship_enable = true
+		ldbc.snb.interactive.parameters_dir = /opt/ldbc-snb/substitution_parameters/
+		ldbc.snb.interactive.scale_factor = 1
+		ldbc.snb.interactive.short_read_dissipation = 0.2
+		ldbc.snb.interactive.updates_dir = /opt/ldbc-snb/social_network/
+		log_delayed = true
+		password = admin
+		peer_identifiers = 
+		printQueryNames = false
+		printQueryResults = false
+		printQueryStrings = false
+		queryDir = queries/
+		user = neo4j
+		workload_statistics = false
+
+ExecuteWorkloadMode  
+ --------------------
+ --- Warmup Phase ---
+ --------------------
+ExecuteWorkloadMode  Scanning workload streams to calculate their limits...
+WorkloadStreams  Scanned 0 of 0 - OFFSET
+WorkloadStreams  Scanned 1,004 of 1,000 - RUN
+ExecuteWorkloadMode  Loaded workload: org.ldbcouncil.snb.driver.workloads.interactive.LdbcSnbInteractiveWorkload
+ExecuteWorkloadMode  Retrieving workload stream: LdbcSnbInteractiveWorkload
+Unable to load query from file: queries//interactive-complex-3-duration-as-function.cypherUnable to load query from file: queries//interactive-complex-4-duration-as-function.cypherUnable to load query from file: queries//interactive-complex-7-with-second.cypherUnable to load query from file: queries//interactive-update-1-add-person.cypherUnable to load query from file: queries//interactive-update-1-add-person-companies.cypherUnable to load query from file: queries//interactive-update-1-add-person-emails.cypherUnable to load query from file: queries//interactive-update-1-add-person-languages.cypherUnable to load query from file: queries//interactive-update-1-add-person-tags.cypherUnable to load query from file: queries//interactive-update-1-add-person-universities.cypherUnable to load query from file: queries//interactive-update-4-add-forum.cypherUnable to load query from file: queries//interactive-update-4-add-forum-tags.cypherUnable to load query from file: queries//interactive-update-6-add-post.cypherUnable to load query from file: queries//interactive-update-6-add-post-tags.cypherUnable to load query from file: queries//interactive-update-7-add-comment.cypherUnable to load query from file: queries//interactive-update-7-add-comment-tags.cypherUnable to load query from file: queries//interactive-update-6-add-post-content.cypherUnable to load query from file: queries//interactive-update-6-add-post-imagefile.cypherUnable to load query from file: queries//interactive-complex-3-duration-as-function.cypherUnable to load query from file: queries//interactive-complex-4-duration-as-function.cypherUnable to load query from file: queries//interactive-complex-7-with-second.cypherUnable to load query from file: queries//interactive-update-1-add-person.cypherUnable to load query from file: queries//interactive-update-1-add-person-companies.cypherUnable to load query from file: queries//interactive-update-1-add-person-emails.cypherUnable to load query from file: queries//interactive-update-1-add-person-languages.cypherUnable to load query from file: queries//interactive-update-1-add-person-tags.cypherUnable to load query from file: queries//interactive-update-1-add-person-universities.cypherUnable to load query from file: queries//interactive-update-4-add-forum.cypherUnable to load query from file: queries//interactive-update-4-add-forum-tags.cypherUnable to load query from file: queries//interactive-update-6-add-post.cypherUnable to load query from file: queries//interactive-update-6-add-post-tags.cypherUnable to load query from file: queries//interactive-update-7-add-comment.cypherUnable to load query from file: queries//interactive-update-7-add-comment-tags.cypherUnable to load query from file: queries//interactive-update-6-add-post-content.cypherUnable to load query from file: queries//interactive-update-6-add-post-imagefile.cypherExecuteWorkloadMode  Loaded DB: org.ldbcouncil.snb.impls.workloads.cypher.interactive.CypherInteractiveDb
+ExecuteWorkloadMode  Instantiating WorkloadRunner
+WorkloadStatusThread  2026/07/04 21:07:03 +0000 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 21:07:04 +0000 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 21:07:05 +0000 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 21:07:06 +0000 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 21:07:07 +0000 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 21:07:09 +0000 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 21:07:10 +0000 Runtime [00:02.164 (m:s.ms)], Operations [7], Last [00:00.276 (m:s.ms)], Throughput (Total) [3.23] (Last 2s) [3.23]
+WorkloadStatusThread  2026/07/04 21:07:11 +0000 Runtime [00:03.266 (m:s.ms)], Operations [11], Last [00:00.048 (m:s.ms)], Throughput (Total) [3.37] (Last 3s) [3.37]
+WorkloadStatusThread  2026/07/04 21:07:12 +0000 Runtime [00:04.367 (m:s.ms)], Operations [15], Last [00:00.541 (m:s.ms)], Throughput (Total) [3.43] (Last 4s) [3.43]
+WorkloadStatusThread  2026/07/04 21:07:13 +0000 Runtime [00:05.468 (m:s.ms)], Operations [16], Last [00:00.117 (m:s.ms)], Throughput (Total) [2.93] (Last 3s) [2.72]
+WorkloadStatusThread  2026/07/04 21:07:14 +0000 Runtime [00:06.569 (m:s.ms)], Operations [19], Last [00:00.548 (m:s.ms)], Throughput (Total) [2.89] (Last 3s) [2.42]
+WorkloadStatusThread  2026/07/04 21:07:15 +0000 Runtime [00:07.669 (m:s.ms)], Operations [20], Last [00:00.813 (m:s.ms)], Throughput (Total) [2.61] (Last 3s) [1.51]
+WorkloadStatusThread  2026/07/04 21:07:16 +0000 Runtime [00:08.771 (m:s.ms)], Operations [22], Last [00:00.189 (m:s.ms)], Throughput (Total) [2.51] (Last 3s) [1.82]
+WorkloadStatusThread  2026/07/04 21:07:17 +0000 Runtime [00:09.872 (m:s.ms)], Operations [29], Last [00:00.181 (m:s.ms)], Throughput (Total) [2.94] (Last 3s) [3.03]
+WorkloadStatusThread  2026/07/04 21:07:18 +0000 Runtime [00:10.975 (m:s.ms)], Operations [33], Last [00:00.939 (m:s.ms)], Throughput (Total) [3.01] (Last 3s) [3.93]
+WorkloadStatusThread  2026/07/04 21:07:20 +0000 Runtime [00:12.076 (m:s.ms)], Operations [36], Last [00:00.151 (m:s.ms)], Throughput (Total) [2.98] (Last 3s) [4.24]
+WorkloadStatusThread  2026/07/04 21:07:21 +0000 Runtime [00:13.177 (m:s.ms)], Operations [44], Last [00:00.152 (m:s.ms)], Throughput (Total) [3.34] (Last 3s) [4.54]
+WorkloadStatusThread  2026/07/04 21:07:22 +0000 Runtime [00:14.278 (m:s.ms)], Operations [49], Last [00:00.119 (m:s.ms)], Throughput (Total) [3.43] (Last 3s) [4.84]
+WorkloadStatusThread  2026/07/04 21:07:23 +0000 Runtime [00:15.281 (m:s.ms)], Operations [63], Last [00:00.438 (m:s.ms)], Throughput (Total) [4.12] (Last 3s) [8.42]
+WorkloadStatusThread  2026/07/04 21:07:24 +0000 Runtime [00:16.381 (m:s.ms)], Operations [73], Last [00:00.146 (m:s.ms)], Throughput (Total) [4.46] (Last 3s) [9.05]
+WorkloadStatusThread  2026/07/04 21:07:25 +0000 Runtime [00:17.482 (m:s.ms)], Operations [98], Last [00:00.022 (m:s.ms)], Throughput (Total) [5.61] (Last 3s) [15.29]
+WorkloadStatusThread  2026/07/04 21:07:26 +0000 Runtime [00:18.583 (m:s.ms)], Operations [101], Last [00:00.045 (m:s.ms)], Throughput (Total) [5.44] (Last 3s) [11.51]
+WorkloadStatusThread  2026/07/04 21:07:27 +0000 Runtime [00:19.684 (m:s.ms)], Operations [101], Last [00:01.146 (m:s.ms)], Throughput (Total) [5.13] (Last 3s) [8.48]
+WorkloadStatusThread  2026/07/04 21:07:28 +0000 Runtime [00:20.786 (m:s.ms)], Operations [113], Last [00:00.002 (m:s.ms)], Throughput (Total) [5.44] (Last 3s) [4.54]
+WorkloadStatusThread  2026/07/04 21:07:29 +0000 Runtime [00:21.888 (m:s.ms)], Operations [128], Last [00:00.080 (m:s.ms)], Throughput (Total) [5.85] (Last 3s) [8.17]
+WorkloadStatusThread  2026/07/04 21:07:30 +0000 Runtime [00:22.890 (m:s.ms)], Operations [131], Last [00:00.413 (m:s.ms)], Throughput (Total) [5.72] (Last 3s) [9.36]
+WorkloadStatusThread  2026/07/04 21:07:31 +0000 Runtime [00:23.991 (m:s.ms)], Operations [151], Last [00:00.115 (m:s.ms)], Throughput (Total) [6.29] (Last 3s) [11.86]
+WorkloadStatusThread  2026/07/04 21:07:33 +0000 Runtime [00:25.092 (m:s.ms)], Operations [154], Last [00:00.445 (m:s.ms)], Throughput (Total) [6.14] (Last 3s) [8.11]
+WorkloadStatusThread  2026/07/04 21:07:34 +0000 Runtime [00:26.192 (m:s.ms)], Operations [162], Last [00:00.611 (m:s.ms)], Throughput (Total) [6.19] (Last 3s) [9.39]
+WorkloadStatusThread  2026/07/04 21:07:35 +0000 Runtime [00:27.294 (m:s.ms)], Operations [176], Last [00:00.208 (m:s.ms)], Throughput (Total) [6.45] (Last 3s) [7.57]
+WorkloadStatusThread  2026/07/04 21:07:36 +0000 Runtime [00:28.398 (m:s.ms)], Operations [188], Last [00:00.701 (m:s.ms)], Throughput (Total) [6.62] (Last 3s) [10.28]
+WorkloadStatusThread  2026/07/04 21:07:37 +0000 Runtime [00:29.498 (m:s.ms)], Operations [201], Last [00:00.201 (m:s.ms)], Throughput (Total) [6.81] (Last 3s) [11.80]
+WorkloadStatusThread  2026/07/04 21:07:38 +0000 Runtime [00:30.599 (m:s.ms)], Operations [203], Last [00:00.756 (m:s.ms)], Throughput (Total) [6.63] (Last 3s) [8.17]
+WorkloadStatusThread  2026/07/04 21:07:39 +0000 Runtime [00:31.700 (m:s.ms)], Operations [203], Last [00:01.857 (m:s.ms)], Throughput (Total) [6.40] (Last 3s) [4.54]
+WorkloadStatusThread  2026/07/04 21:07:40 +0000 Runtime [00:32.801 (m:s.ms)], Operations [215], Last [00:00.370 (m:s.ms)], Throughput (Total) [6.55] (Last 3s) [4.24]
+WorkloadStatusThread  2026/07/04 21:07:41 +0000 Runtime [00:33.904 (m:s.ms)], Operations [244], Last [00:00.166 (m:s.ms)], Throughput (Total) [7.20] (Last 3s) [12.41]
+WorkloadStatusThread  2026/07/04 21:07:43 +0000 Runtime [00:35.005 (m:s.ms)], Operations [256], Last [00:00.325 (m:s.ms)], Throughput (Total) [7.31] (Last 3s) [16.04]
+WorkloadStatusThread  2026/07/04 21:07:44 +0000 Runtime [00:36.106 (m:s.ms)], Operations [292], Last [00:00.072 (m:s.ms)], Throughput (Total) [8.09] (Last 3s) [23.30]
+WorkloadStatusThread  2026/07/04 21:07:45 +0000 Runtime [00:37.207 (m:s.ms)], Operations [299], Last [00:00.118 (m:s.ms)], Throughput (Total) [8.04] (Last 3s) [16.65]
+WorkloadStatusThread  2026/07/04 21:07:46 +0000 Runtime [00:38.307 (m:s.ms)], Operations [300], Last [00:00.140 (m:s.ms)], Throughput (Total) [7.83] (Last 3s) [13.33]
+WorkloadStatusThread  2026/07/04 21:07:47 +0000 Runtime [00:39.408 (m:s.ms)], Operations [311], Last [00:00.134 (m:s.ms)], Throughput (Total) [7.89] (Last 3s) [5.75]
+WorkloadStatusThread  2026/07/04 21:07:48 +0000 Runtime [00:40.509 (m:s.ms)], Operations [332], Last [00:00.147 (m:s.ms)], Throughput (Total) [8.20] (Last 3s) [9.99]
+WorkloadStatusThread  2026/07/04 21:07:49 +0000 Runtime [00:41.610 (m:s.ms)], Operations [341], Last [00:00.676 (m:s.ms)], Throughput (Total) [8.20] (Last 3s) [12.41]
+WorkloadStatusThread  2026/07/04 21:07:50 +0000 Runtime [00:42.711 (m:s.ms)], Operations [355], Last [00:00.055 (m:s.ms)], Throughput (Total) [8.31] (Last 3s) [13.32]
+WorkloadStatusThread  2026/07/04 21:07:51 +0000 Runtime [00:43.812 (m:s.ms)], Operations [374], Last [00:00.181 (m:s.ms)], Throughput (Total) [8.54] (Last 3s) [12.72]
+WorkloadStatusThread  2026/07/04 21:07:52 +0000 Runtime [00:44.912 (m:s.ms)], Operations [379], Last [00:00.004 (m:s.ms)], Throughput (Total) [8.44] (Last 3s) [11.51]
+WorkloadStatusThread  2026/07/04 21:07:54 +0000 Runtime [00:46.013 (m:s.ms)], Operations [382], Last [00:01.090 (m:s.ms)], Throughput (Total) [8.30] (Last 3s) [8.18]
+WorkloadStatusThread  2026/07/04 21:07:55 +0000 Runtime [00:47.114 (m:s.ms)], Operations [395], Last [00:00.396 (m:s.ms)], Throughput (Total) [8.38] (Last 3s) [6.36]
+WorkloadStatusThread  2026/07/04 21:07:56 +0000 Runtime [00:48.214 (m:s.ms)], Operations [398], Last [00:00.053 (m:s.ms)], Throughput (Total) [8.25] (Last 3s) [5.75]
+WorkloadStatusThread  2026/07/04 21:07:57 +0000 Runtime [00:49.315 (m:s.ms)], Operations [408], Last [00:00.011 (m:s.ms)], Throughput (Total) [8.27] (Last 3s) [7.87]
+WorkloadStatusThread  2026/07/04 21:07:58 +0000 Runtime [00:50.415 (m:s.ms)], Operations [431], Last [00:00.209 (m:s.ms)], Throughput (Total) [8.55] (Last 3s) [10.91]
+WorkloadStatusThread  2026/07/04 21:07:59 +0000 Runtime [00:51.516 (m:s.ms)], Operations [444], Last [00:00.183 (m:s.ms)], Throughput (Total) [8.62] (Last 3s) [13.93]
+WorkloadStatusThread  2026/07/04 21:08:00 +0000 Runtime [00:52.617 (m:s.ms)], Operations [459], Last [00:00.350 (m:s.ms)], Throughput (Total) [8.72] (Last 3s) [15.45]
+WorkloadStatusThread  2026/07/04 21:08:01 +0000 Runtime [00:53.717 (m:s.ms)], Operations [461], Last [00:00.263 (m:s.ms)], Throughput (Total) [8.58] (Last 3s) [9.09]
+WorkloadStatusThread  2026/07/04 21:08:02 +0000 Runtime [00:54.818 (m:s.ms)], Operations [473], Last [00:00.042 (m:s.ms)], Throughput (Total) [8.63] (Last 3s) [8.78]
+WorkloadStatusThread  2026/07/04 21:08:03 +0000 Runtime [00:55.919 (m:s.ms)], Operations [474], Last [00:00.070 (m:s.ms)], Throughput (Total) [8.48] (Last 3s) [4.54]
+WorkloadStatusThread  2026/07/04 21:08:05 +0000 Runtime [00:57.019 (m:s.ms)], Operations [478], Last [00:00.334 (m:s.ms)], Throughput (Total) [8.38] (Last 3s) [5.15]
+WorkloadStatusThread  2026/07/04 21:08:06 +0000 Runtime [00:58.120 (m:s.ms)], Operations [492], Last [00:00.088 (m:s.ms)], Throughput (Total) [8.47] (Last 3s) [5.75]
+WorkloadStatusThread  2026/07/04 21:08:07 +0000 Runtime [00:59.122 (m:s.ms)], Operations [506], Last [00:00.307 (m:s.ms)], Throughput (Total) [8.56] (Last 3s) [9.99]
+WorkloadStatusThread  2026/07/04 21:08:08 +0000 Runtime [01:00.223 (m:s.ms)], Operations [542], Last [00:00.233 (m:s.ms)], Throughput (Total) [9.00] (Last 3s) [19.98]
+WorkloadStatusThread  2026/07/04 21:08:09 +0000 Runtime [01:01.324 (m:s.ms)], Operations [553], Last [00:00.285 (m:s.ms)], Throughput (Total) [9.02] (Last 3s) [19.04]
+WorkloadStatusThread  2026/07/04 21:08:10 +0000 Runtime [01:02.424 (m:s.ms)], Operations [554], Last [00:00.981 (m:s.ms)], Throughput (Total) [8.87] (Last 3s) [14.54]
+WorkloadStatusThread  2026/07/04 21:08:11 +0000 Runtime [01:03.526 (m:s.ms)], Operations [560], Last [00:00.000 (m:s.ms)], Throughput (Total) [8.82] (Last 3s) [5.45]
+WorkloadStatusThread  2026/07/04 21:08:12 +0000 Runtime [01:04.627 (m:s.ms)], Operations [588], Last [00:00.064 (m:s.ms)], Throughput (Total) [9.10] (Last 3s) [10.60]
+WorkloadStatusThread  2026/07/04 21:08:13 +0000 Runtime [01:05.728 (m:s.ms)], Operations [590], Last [00:00.321 (m:s.ms)], Throughput (Total) [8.98] (Last 3s) [10.90]
+WorkloadStatusThread  2026/07/04 21:08:14 +0000 Runtime [01:06.829 (m:s.ms)], Operations [601], Last [00:00.049 (m:s.ms)], Throughput (Total) [8.99] (Last 3s) [12.41]
+WorkloadStatusThread  2026/07/04 21:08:15 +0000 Runtime [01:07.929 (m:s.ms)], Operations [619], Last [00:00.275 (m:s.ms)], Throughput (Total) [9.11] (Last 3s) [9.39]
+WorkloadStatusThread  2026/07/04 21:08:17 +0000 Runtime [01:09.030 (m:s.ms)], Operations [630], Last [00:00.020 (m:s.ms)], Throughput (Total) [9.13] (Last 3s) [12.11]
+WorkloadStatusThread  2026/07/04 21:08:18 +0000 Runtime [01:10.131 (m:s.ms)], Operations [651], Last [00:00.180 (m:s.ms)], Throughput (Total) [9.28] (Last 3s) [15.14]
+WorkloadStatusThread  2026/07/04 21:08:19 +0000 Runtime [01:11.231 (m:s.ms)], Operations [653], Last [00:00.045 (m:s.ms)], Throughput (Total) [9.17] (Last 3s) [10.30]
+WorkloadStatusThread  2026/07/04 21:08:20 +0000 Runtime [01:12.234 (m:s.ms)], Operations [667], Last [00:00.007 (m:s.ms)], Throughput (Total) [9.23] (Last 3s) [11.55]
+WorkloadStatusThread  2026/07/04 21:08:21 +0000 Runtime [01:13.334 (m:s.ms)], Operations [667], Last [00:01.107 (m:s.ms)], Throughput (Total) [9.10] (Last 3s) [5.00]
+WorkloadStatusThread  2026/07/04 21:08:22 +0000 Runtime [01:14.435 (m:s.ms)], Operations [672], Last [00:00.108 (m:s.ms)], Throughput (Total) [9.03] (Last 3s) [5.93]
+WorkloadStatusThread  2026/07/04 21:08:23 +0000 Runtime [01:15.536 (m:s.ms)], Operations [677], Last [00:00.219 (m:s.ms)], Throughput (Total) [8.96] (Last 3s) [3.03]
+WorkloadStatusThread  2026/07/04 21:08:24 +0000 Runtime [01:16.637 (m:s.ms)], Operations [685], Last [00:00.030 (m:s.ms)], Throughput (Total) [8.94] (Last 3s) [5.45]
+WorkloadStatusThread  2026/07/04 21:08:25 +0000 Runtime [01:17.737 (m:s.ms)], Operations [687], Last [00:00.333 (m:s.ms)], Throughput (Total) [8.84] (Last 3s) [4.54]
+WorkloadStatusThread  2026/07/04 21:08:26 +0000 Runtime [01:18.740 (m:s.ms)], Operations [712], Last [00:00.309 (m:s.ms)], Throughput (Total) [9.04] (Last 3s) [10.92]
+WorkloadStatusThread  2026/07/04 21:08:27 +0000 Runtime [01:19.842 (m:s.ms)], Operations [725], Last [00:00.280 (m:s.ms)], Throughput (Total) [9.08] (Last 3s) [12.48]
+WorkloadStatusThread  2026/07/04 21:08:28 +0000 Runtime [01:20.942 (m:s.ms)], Operations [744], Last [00:00.036 (m:s.ms)], Throughput (Total) [9.19] (Last 3s) [17.78]
+WorkloadStatusThread  2026/07/04 21:08:30 +0000 Runtime [01:22.043 (m:s.ms)], Operations [764], Last [00:00.296 (m:s.ms)], Throughput (Total) [9.31] (Last 3s) [15.74]
+WorkloadStatusThread  2026/07/04 21:08:31 +0000 Runtime [01:23.143 (m:s.ms)], Operations [775], Last [00:00.234 (m:s.ms)], Throughput (Total) [9.32] (Last 3s) [15.15]
+WorkloadStatusThread  2026/07/04 21:08:32 +0000 Runtime [01:24.244 (m:s.ms)], Operations [778], Last [00:00.282 (m:s.ms)], Throughput (Total) [9.24] (Last 3s) [10.30]
+WorkloadStatusThread  2026/07/04 21:08:33 +0000 Runtime [01:25.345 (m:s.ms)], Operations [785], Last [00:00.269 (m:s.ms)], Throughput (Total) [9.20] (Last 3s) [6.36]
+WorkloadStatusThread  2026/07/04 21:08:34 +0000 Runtime [01:26.445 (m:s.ms)], Operations [796], Last [00:00.327 (m:s.ms)], Throughput (Total) [9.21] (Last 3s) [6.36]
+WorkloadStatusThread  2026/07/04 21:08:35 +0000 Runtime [01:27.546 (m:s.ms)], Operations [806], Last [00:00.096 (m:s.ms)], Throughput (Total) [9.21] (Last 3s) [8.48]
+WorkloadStatusThread  2026/07/04 21:08:36 +0000 Runtime [01:28.647 (m:s.ms)], Operations [823], Last [00:00.352 (m:s.ms)], Throughput (Total) [9.28] (Last 3s) [11.51]
+WorkloadStatusThread  2026/07/04 21:08:37 +0000 Runtime [01:29.748 (m:s.ms)], Operations [827], Last [00:00.450 (m:s.ms)], Throughput (Total) [9.21] (Last 3s) [9.39]
+WorkloadStatusThread  2026/07/04 21:08:38 +0000 Runtime [01:30.848 (m:s.ms)], Operations [828], Last [00:00.628 (m:s.ms)], Throughput (Total) [9.11] (Last 3s) [6.66]
+WorkloadStatusThread  2026/07/04 21:08:39 +0000 Runtime [01:31.949 (m:s.ms)], Operations [830], Last [00:00.606 (m:s.ms)], Throughput (Total) [9.03] (Last 3s) [2.12]
+WorkloadStatusThread  2026/07/04 21:08:41 +0000 Runtime [01:33.049 (m:s.ms)], Operations [835], Last [00:00.135 (m:s.ms)], Throughput (Total) [8.97] (Last 3s) [2.42]
+WorkloadStatusThread  2026/07/04 21:08:42 +0000 Runtime [01:34.150 (m:s.ms)], Operations [862], Last [00:00.537 (m:s.ms)], Throughput (Total) [9.16] (Last 3s) [10.30]
+WorkloadStatusThread  2026/07/04 21:08:43 +0000 Runtime [01:35.251 (m:s.ms)], Operations [883], Last [00:00.698 (m:s.ms)], Throughput (Total) [9.27] (Last 3s) [16.05]
+WorkloadStatusThread  2026/07/04 21:08:44 +0000 Runtime [01:36.351 (m:s.ms)], Operations [895], Last [00:00.095 (m:s.ms)], Throughput (Total) [9.29] (Last 3s) [18.17]
+WorkloadStatusThread  2026/07/04 21:08:45 +0000 Runtime [01:37.452 (m:s.ms)], Operations [920], Last [00:00.100 (m:s.ms)], Throughput (Total) [9.44] (Last 3s) [17.57]
+WorkloadStatusThread  2026/07/04 21:08:46 +0000 Runtime [01:38.553 (m:s.ms)], Operations [922], Last [00:00.665 (m:s.ms)], Throughput (Total) [9.36] (Last 3s) [11.81]
+WorkloadStatusThread  2026/07/04 21:08:47 +0000 Runtime [01:39.653 (m:s.ms)], Operations [937], Last [00:00.218 (m:s.ms)], Throughput (Total) [9.40] (Last 3s) [12.72]
+WorkloadStatusThread  2026/07/04 21:08:48 +0000 Runtime [01:40.754 (m:s.ms)], Operations [959], Last [00:00.001 (m:s.ms)], Throughput (Total) [9.52] (Last 3s) [11.81]
+WorkloadStatusThread  2026/07/04 21:08:49 +0000 Runtime [01:41.854 (m:s.ms)], Operations [963], Last [00:00.115 (m:s.ms)], Throughput (Total) [9.45] (Last 3s) [12.42]
+WorkloadStatusThread  2026/07/04 21:08:50 +0000 Runtime [01:42.955 (m:s.ms)], Operations [982], Last [00:00.430 (m:s.ms)], Throughput (Total) [9.54] (Last 3s) [13.63]
+WorkloadStatusThread  2026/07/04 21:08:52 +0000 Runtime [01:44.056 (m:s.ms)], Operations [992], Last [00:00.546 (m:s.ms)], Throughput (Total) [9.53] (Last 3s) [9.99]
+WorkloadStatusThread  2026/07/04 21:08:53 +0000 Runtime [01:45.156 (m:s.ms)], Operations [1,004], Last [00:00.201 (m:s.ms)], Throughput (Total) [9.55] (Last 3s) [12.42]
+WorkloadStatusThread  2026/07/04 21:08:54 +0000 Runtime [01:46.257 (m:s.ms)], Operations [1,006], Last [00:00.621 (m:s.ms)], Throughput (Total) [9.47] (Last 3s) [7.27]
+WorkloadStatusThread  2026/07/04 21:08:55 +0000 Runtime [01:47.357 (m:s.ms)], Operations [1,007], Last [00:00.391 (m:s.ms)], Throughput (Total) [9.38] (Last 3s) [4.54]
+WorkloadStatusThread  2026/07/04 21:08:56 +0000 Runtime [01:48.459 (m:s.ms)], Operations [1,042], Last [00:00.277 (m:s.ms)], Throughput (Total) [9.61] (Last 3s) [11.50]
+WorkloadStatusThread  2026/07/04 21:08:57 +0000 Runtime [01:49.560 (m:s.ms)], Operations [1,044], Last [00:00.999 (m:s.ms)], Throughput (Total) [9.53] (Last 3s) [11.50]
+Shutting down status thread...
+ExecuteWorkloadMode  Shutting down workload...
+ExecuteWorkloadMode  Shutting down completion time service...
+ExecuteWorkloadMode  Shutting down metrics collection service...
+ExecuteWorkloadMode  
+------------------------------------------------------------------------------
+Operation Count:                        1,059
+Duration:                               01:50.133.000 (m:s.ms.us)
+Throughput:                             9.62 (op/s)
+------------------------------------------------------------------------------
+    LdbcQuery1                     Count: 9     Mean: 179.44 ms
+    LdbcQuery10                    Count: 8     Mean: 687.12 ms
+    LdbcQuery11                    Count: 15    Mean: 134.47 ms
+    LdbcQuery12                    Count: 5     Mean: 525.60 ms
+    LdbcQuery13                    Count: 12    Mean: 47.25 ms
+    LdbcQuery14                    Count: 5     Mean: 811.00 ms
+    LdbcQuery2                     Count: 6     Mean: 132.67 ms
+    LdbcQuery3                     Count: 3     Mean: 1,907.33 ms
+    LdbcQuery4                     Count: 6     Mean: 89.33 ms
+    LdbcQuery5                     Count: 4     Mean: 1,270.75 ms
+    LdbcQuery6                     Count: 1     Mean: 2,027.00 ms
+    LdbcQuery7                     Count: 2     Mean: 216.00 ms
+    LdbcQuery8                     Count: 5     Mean: 43.40 ms
+    LdbcQuery9                     Count: 1     Mean: 1,910.00 ms
+    LdbcShortQuery1PersonProfile   Count: 100   Mean: 6.86 ms
+    LdbcShortQuery2PersonPosts     Count: 100   Mean: 14.03 ms
+    LdbcShortQuery3PersonFriends   Count: 100   Mean: 10.90 ms
+    LdbcShortQuery4MessageContent  Count: 99    Mean: 6.51 ms
+    LdbcShortQuery5MessageCreator  Count: 99    Mean: 6.54 ms
+    LdbcShortQuery6MessageForum    Count: 99    Mean: 7.51 ms
+    LdbcShortQuery7MessageReplies  Count: 99    Mean: 8.42 ms
+    LdbcUpdate2AddPostLike         Count: 28    Mean: 17.07 ms
+    LdbcUpdate3AddCommentLike      Count: 33    Mean: 10.33 ms
+    LdbcUpdate4AddForum            Count: 4     Mean: 25.00 ms
+    LdbcUpdate5AddForumMembership  Count: 107   Mean: 23.23 ms
+    LdbcUpdate6AddPost             Count: 57    Mean: 12.33 ms
+    LdbcUpdate7AddComment          Count: 48    Mean: 28.52 ms
+    LdbcUpdate8AddFriendship       Count: 4     Mean: 15.75 ms
+------------------------------------------------------------------------------
+
+ExecuteWorkloadMode  Exporting workload metrics to /opt/ldbc-snb/ldbc_snb_interactive_v1_impls/cypher/results/LDBC-SNB-WARMUP--results.json...
+ExecuteWorkloadMode  Validating workload results...
+ExecuteWorkloadMode  Exporting workload results validation to: /opt/ldbc-snb/ldbc_snb_interactive_v1_impls/cypher/results/LDBC-SNB-WARMUP--validation.json
+ExecuteWorkloadMode  PASSED SCHEDULE AUDIT -- workload operations executed to schedule
+ExecuteWorkloadMode  
+ -----------------
+ --- Run Phase ---
+ -----------------
+ExecuteWorkloadMode  Scanning workload streams to calculate their limits...
+WorkloadStreams  Scanned 1,004 of 1,000 - OFFSET
+WorkloadStreams  Scanned 3,000 of 3,000 - RUN
+ExecuteWorkloadMode  Loaded workload: org.ldbcouncil.snb.driver.workloads.interactive.LdbcSnbInteractiveWorkload
+ExecuteWorkloadMode  Retrieving workload stream: LdbcSnbInteractiveWorkload
+ExecuteWorkloadMode  Instantiating WorkloadRunner
+WorkloadStatusThread  2026/07/04 21:09:03 +0000 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 21:09:04 +0000 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 21:09:06 +0000 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 21:09:07 +0000 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 21:09:08 +0000 Runtime [00:00.000 (m:s.ms)], Operations [0], Last [00:00.000 (m:s.ms)], Throughput (Total) [0.00] (Last 0s) [0.00]
+WorkloadStatusThread  2026/07/04 21:09:09 +0000 Runtime [00:00.466 (m:s.ms)], Operations [1], Last [00:00.460 (m:s.ms)], Throughput (Total) [2.15] (Last 0s) [2.15]
+WorkloadStatusThread  2026/07/04 21:09:10 +0000 Runtime [00:01.566 (m:s.ms)], Operations [4], Last [00:00.212 (m:s.ms)], Throughput (Total) [2.55] (Last 1s) [2.55]
+WorkloadStatusThread  2026/07/04 21:09:11 +0000 Runtime [00:02.667 (m:s.ms)], Operations [9], Last [00:00.007 (m:s.ms)], Throughput (Total) [3.37] (Last 2s) [3.37]
+WorkloadStatusThread  2026/07/04 21:09:12 +0000 Runtime [00:03.767 (m:s.ms)], Operations [12], Last [00:00.144 (m:s.ms)], Throughput (Total) [3.19] (Last 3s) [3.33]
+WorkloadStatusThread  2026/07/04 21:09:13 +0000 Runtime [00:04.868 (m:s.ms)], Operations [15], Last [00:00.226 (m:s.ms)], Throughput (Total) [3.08] (Last 3s) [3.33]
+WorkloadStatusThread  2026/07/04 21:09:14 +0000 Runtime [00:05.969 (m:s.ms)], Operations [18], Last [00:00.598 (m:s.ms)], Throughput (Total) [3.02] (Last 3s) [2.73]
+WorkloadStatusThread  2026/07/04 21:09:15 +0000 Runtime [00:07.069 (m:s.ms)], Operations [46], Last [00:00.001 (m:s.ms)], Throughput (Total) [6.51] (Last 3s) [10.30]
+WorkloadStatusThread  2026/07/04 21:09:16 +0000 Runtime [00:08.070 (m:s.ms)], Operations [62], Last [00:00.748 (m:s.ms)], Throughput (Total) [7.68] (Last 3s) [14.68]
+WorkloadStatusThread  2026/07/04 21:09:18 +0000 Runtime [00:09.171 (m:s.ms)], Operations [74], Last [00:00.057 (m:s.ms)], Throughput (Total) [8.07] (Last 3s) [17.49]
+WorkloadStatusThread  2026/07/04 21:09:19 +0000 Runtime [00:10.271 (m:s.ms)], Operations [82], Last [00:00.567 (m:s.ms)], Throughput (Total) [7.98] (Last 3s) [11.24]
+WorkloadStatusThread  2026/07/04 21:09:20 +0000 Runtime [00:11.371 (m:s.ms)], Operations [101], Last [00:00.234 (m:s.ms)], Throughput (Total) [8.88] (Last 3s) [11.81]
+WorkloadStatusThread  2026/07/04 21:09:21 +0000 Runtime [00:12.472 (m:s.ms)], Operations [109], Last [00:00.512 (m:s.ms)], Throughput (Total) [8.74] (Last 3s) [10.60]
+WorkloadStatusThread  2026/07/04 21:09:22 +0000 Runtime [00:13.572 (m:s.ms)], Operations [110], Last [00:00.349 (m:s.ms)], Throughput (Total) [8.10] (Last 3s) [8.48]
+WorkloadStatusThread  2026/07/04 21:09:23 +0000 Runtime [00:14.673 (m:s.ms)], Operations [112], Last [00:00.087 (m:s.ms)], Throughput (Total) [7.63] (Last 3s) [3.33]
+WorkloadStatusThread  2026/07/04 21:09:24 +0000 Runtime [00:15.774 (m:s.ms)], Operations [125], Last [00:00.151 (m:s.ms)], Throughput (Total) [7.92] (Last 3s) [4.85]
+WorkloadStatusThread  2026/07/04 21:09:25 +0000 Runtime [00:16.874 (m:s.ms)], Operations [129], Last [00:00.081 (m:s.ms)], Throughput (Total) [7.64] (Last 3s) [5.75]
+WorkloadStatusThread  2026/07/04 21:09:26 +0000 Runtime [00:17.975 (m:s.ms)], Operations [144], Last [00:00.231 (m:s.ms)], Throughput (Total) [8.01] (Last 3s) [9.69]
+WorkloadStatusThread  2026/07/04 21:09:27 +0000 Runtime [00:18.976 (m:s.ms)], Operations [161], Last [00:00.599 (m:s.ms)], Throughput (Total) [8.48] (Last 3s) [11.24]
+WorkloadStatusThread  2026/07/04 21:09:28 +0000 Runtime [00:20.078 (m:s.ms)], Operations [187], Last [00:00.159 (m:s.ms)], Throughput (Total) [9.31] (Last 3s) [18.10]
+WorkloadStatusThread  2026/07/04 21:09:30 +0000 Runtime [00:21.178 (m:s.ms)], Operations [191], Last [00:00.249 (m:s.ms)], Throughput (Total) [9.02] (Last 3s) [14.67]
+WorkloadStatusThread  2026/07/04 21:09:31 +0000 Runtime [00:22.279 (m:s.ms)], Operations [192], Last [00:00.725 (m:s.ms)], Throughput (Total) [8.62] (Last 3s) [9.39]
+WorkloadStatusThread  2026/07/04 21:09:32 +0000 Runtime [00:23.379 (m:s.ms)], Operations [213], Last [00:00.107 (m:s.ms)], Throughput (Total) [9.11] (Last 3s) [7.88]
+WorkloadStatusThread  2026/07/04 21:09:33 +0000 Runtime [00:24.480 (m:s.ms)], Operations [214], Last [00:00.753 (m:s.ms)], Throughput (Total) [8.74] (Last 3s) [6.97]
+WorkloadStatusThread  2026/07/04 21:09:34 +0000 Runtime [00:25.580 (m:s.ms)], Operations [230], Last [00:00.918 (m:s.ms)], Throughput (Total) [8.99] (Last 3s) [11.51]
+WorkloadStatusThread  2026/07/04 21:09:35 +0000 Runtime [00:26.681 (m:s.ms)], Operations [244], Last [00:00.212 (m:s.ms)], Throughput (Total) [9.15] (Last 3s) [9.39]
+WorkloadStatusThread  2026/07/04 21:09:36 +0000 Runtime [00:27.781 (m:s.ms)], Operations [246], Last [00:00.054 (m:s.ms)], Throughput (Total) [8.85] (Last 3s) [9.69]
+WorkloadStatusThread  2026/07/04 21:09:37 +0000 Runtime [00:28.882 (m:s.ms)], Operations [255], Last [00:00.556 (m:s.ms)], Throughput (Total) [8.83] (Last 3s) [7.57]
+WorkloadStatusThread  2026/07/04 21:09:38 +0000 Runtime [00:29.982 (m:s.ms)], Operations [263], Last [00:00.219 (m:s.ms)], Throughput (Total) [8.77] (Last 3s) [5.76]
+WorkloadStatusThread  2026/07/04 21:09:39 +0000 Runtime [00:31.083 (m:s.ms)], Operations [274], Last [00:00.015 (m:s.ms)], Throughput (Total) [8.82] (Last 3s) [8.48]
+WorkloadStatusThread  2026/07/04 21:09:40 +0000 Runtime [00:32.084 (m:s.ms)], Operations [277], Last [00:00.392 (m:s.ms)], Throughput (Total) [8.63] (Last 3s) [6.87]
+WorkloadStatusThread  2026/07/04 21:09:42 +0000 Runtime [00:33.185 (m:s.ms)], Operations [288], Last [00:00.685 (m:s.ms)], Throughput (Total) [8.68] (Last 3s) [7.81]
+WorkloadStatusThread  2026/07/04 21:09:43 +0000 Runtime [00:34.286 (m:s.ms)], Operations [296], Last [00:00.969 (m:s.ms)], Throughput (Total) [8.63] (Last 3s) [6.87]
+WorkloadStatusThread  2026/07/04 21:09:44 +0000 Runtime [00:35.386 (m:s.ms)], Operations [314], Last [00:00.272 (m:s.ms)], Throughput (Total) [8.87] (Last 3s) [11.21]
+WorkloadStatusThread  2026/07/04 21:09:45 +0000 Runtime [00:36.487 (m:s.ms)], Operations [317], Last [00:00.075 (m:s.ms)], Throughput (Total) [8.69] (Last 3s) [8.78]
+WorkloadStatusThread  2026/07/04 21:09:46 +0000 Runtime [00:37.587 (m:s.ms)], Operations [319], Last [00:00.273 (m:s.ms)], Throughput (Total) [8.49] (Last 3s) [6.97]
+WorkloadStatusThread  2026/07/04 21:09:47 +0000 Runtime [00:38.688 (m:s.ms)], Operations [342], Last [00:00.121 (m:s.ms)], Throughput (Total) [8.84] (Last 3s) [8.48]
+WorkloadStatusThread  2026/07/04 21:09:48 +0000 Runtime [00:39.788 (m:s.ms)], Operations [353], Last [00:00.022 (m:s.ms)], Throughput (Total) [8.87] (Last 3s) [10.91]
+WorkloadStatusThread  2026/07/04 21:09:49 +0000 Runtime [00:40.889 (m:s.ms)], Operations [365], Last [00:00.086 (m:s.ms)], Throughput (Total) [8.93] (Last 3s) [13.93]
+WorkloadStatusThread  2026/07/04 21:09:50 +0000 Runtime [00:41.989 (m:s.ms)], Operations [376], Last [00:00.107 (m:s.ms)], Throughput (Total) [8.95] (Last 3s) [10.30]
+WorkloadStatusThread  2026/07/04 21:09:51 +0000 Runtime [00:43.090 (m:s.ms)], Operations [382], Last [00:00.046 (m:s.ms)], Throughput (Total) [8.87] (Last 3s) [8.78]
+WorkloadStatusThread  2026/07/04 21:09:53 +0000 Runtime [00:44.191 (m:s.ms)], Operations [408], Last [00:00.186 (m:s.ms)], Throughput (Total) [9.23] (Last 3s) [13.02]
+WorkloadStatusThread  2026/07/04 21:09:54 +0000 Runtime [00:45.291 (m:s.ms)], Operations [411], Last [00:00.178 (m:s.ms)], Throughput (Total) [9.07] (Last 3s) [10.60]
+WorkloadStatusThread  2026/07/04 21:09:55 +0000 Runtime [00:46.392 (m:s.ms)], Operations [423], Last [00:00.032 (m:s.ms)], Throughput (Total) [9.12] (Last 3s) [12.42]
+WorkloadStatusThread  2026/07/04 21:09:56 +0000 Runtime [00:47.492 (m:s.ms)], Operations [425], Last [00:00.294 (m:s.ms)], Throughput (Total) [8.95] (Last 3s) [5.15]
+WorkloadStatusThread  2026/07/04 21:09:57 +0000 Runtime [00:48.593 (m:s.ms)], Operations [451], Last [00:00.387 (m:s.ms)], Throughput (Total) [9.28] (Last 3s) [12.11]
+WorkloadStatusThread  2026/07/04 21:09:58 +0000 Runtime [00:49.693 (m:s.ms)], Operations [453], Last [00:00.310 (m:s.ms)], Throughput (Total) [9.12] (Last 3s) [9.09]
+WorkloadStatusThread  2026/07/04 21:09:59 +0000 Runtime [00:50.794 (m:s.ms)], Operations [456], Last [00:00.196 (m:s.ms)], Throughput (Total) [8.98] (Last 3s) [9.39]
+WorkloadStatusThread  2026/07/04 21:10:00 +0000 Runtime [00:51.895 (m:s.ms)], Operations [501], Last [00:00.052 (m:s.ms)], Throughput (Total) [9.65] (Last 3s) [15.14]
+WorkloadStatusThread  2026/07/04 21:10:01 +0000 Runtime [00:52.995 (m:s.ms)], Operations [501], Last [00:01.152 (m:s.ms)], Throughput (Total) [9.45] (Last 3s) [14.54]
+WorkloadStatusThread  2026/07/04 21:10:02 +0000 Runtime [00:54.096 (m:s.ms)], Operations [513], Last [00:01.060 (m:s.ms)], Throughput (Total) [9.48] (Last 3s) [17.26]
+WorkloadStatusThread  2026/07/04 21:10:04 +0000 Runtime [00:55.196 (m:s.ms)], Operations [523], Last [00:00.383 (m:s.ms)], Throughput (Total) [9.48] (Last 3s) [6.66]
+WorkloadStatusThread  2026/07/04 21:10:05 +0000 Runtime [00:56.297 (m:s.ms)], Operations [534], Last [00:00.029 (m:s.ms)], Throughput (Total) [9.49] (Last 3s) [9.99]
+WorkloadStatusThread  2026/07/04 21:10:06 +0000 Runtime [00:57.397 (m:s.ms)], Operations [536], Last [00:00.373 (m:s.ms)], Throughput (Total) [9.34] (Last 3s) [6.97]
+WorkloadStatusThread  2026/07/04 21:10:07 +0000 Runtime [00:58.498 (m:s.ms)], Operations [539], Last [00:00.174 (m:s.ms)], Throughput (Total) [9.21] (Last 3s) [4.85]
+WorkloadStatusThread  2026/07/04 21:10:08 +0000 Runtime [00:59.598 (m:s.ms)], Operations [542], Last [00:00.899 (m:s.ms)], Throughput (Total) [9.09] (Last 3s) [2.42]
+WorkloadStatusThread  2026/07/04 21:10:09 +0000 Runtime [01:00.699 (m:s.ms)], Operations [558], Last [00:00.014 (m:s.ms)], Throughput (Total) [9.19] (Last 3s) [6.66]
+WorkloadStatusThread  2026/07/04 21:10:10 +0000 Runtime [01:01.799 (m:s.ms)], Operations [558], Last [00:01.114 (m:s.ms)], Throughput (Total) [9.03] (Last 3s) [5.76]
+WorkloadStatusThread  2026/07/04 21:10:11 +0000 Runtime [01:02.900 (m:s.ms)], Operations [568], Last [00:00.774 (m:s.ms)], Throughput (Total) [9.03] (Last 3s) [7.87]
+WorkloadStatusThread  2026/07/04 21:10:12 +0000 Runtime [01:04.001 (m:s.ms)], Operations [572], Last [00:00.289 (m:s.ms)], Throughput (Total) [8.94] (Last 3s) [4.24]
+WorkloadStatusThread  2026/07/04 21:10:13 +0000 Runtime [01:05.101 (m:s.ms)], Operations [587], Last [00:00.103 (m:s.ms)], Throughput (Total) [9.02] (Last 3s) [8.78]
+WorkloadStatusThread  2026/07/04 21:10:15 +0000 Runtime [01:06.202 (m:s.ms)], Operations [596], Last [00:00.635 (m:s.ms)], Throughput (Total) [9.00] (Last 3s) [8.48]
+WorkloadStatusThread  2026/07/04 21:10:16 +0000 Runtime [01:07.302 (m:s.ms)], Operations [599], Last [00:00.120 (m:s.ms)], Throughput (Total) [8.90] (Last 3s) [8.18]
+WorkloadStatusThread  2026/07/04 21:10:17 +0000 Runtime [01:08.403 (m:s.ms)], Operations [617], Last [00:00.010 (m:s.ms)], Throughput (Total) [9.02] (Last 3s) [9.09]
+WorkloadStatusThread  2026/07/04 21:10:18 +0000 Runtime [01:09.503 (m:s.ms)], Operations [636], Last [00:00.353 (m:s.ms)], Throughput (Total) [9.15] (Last 3s) [12.12]
+WorkloadStatusThread  2026/07/04 21:10:19 +0000 Runtime [01:10.604 (m:s.ms)], Operations [646], Last [00:00.010 (m:s.ms)], Throughput (Total) [9.15] (Last 3s) [14.23]
+WorkloadStatusThread  2026/07/04 21:10:20 +0000 Runtime [01:11.704 (m:s.ms)], Operations [653], Last [00:00.355 (m:s.ms)], Throughput (Total) [9.11] (Last 3s) [10.91]
+WorkloadStatusThread  2026/07/04 21:10:21 +0000 Runtime [01:12.805 (m:s.ms)], Operations [659], Last [00:00.528 (m:s.ms)], Throughput (Total) [9.05] (Last 3s) [6.97]
+WorkloadStatusThread  2026/07/04 21:10:22 +0000 Runtime [01:13.905 (m:s.ms)], Operations [662], Last [00:00.301 (m:s.ms)], Throughput (Total) [8.96] (Last 3s) [4.85]
+WorkloadStatusThread  2026/07/04 21:10:23 +0000 Runtime [01:15.006 (m:s.ms)], Operations [664], Last [00:00.037 (m:s.ms)], Throughput (Total) [8.85] (Last 3s) [3.33]
+WorkloadStatusThread  2026/07/04 21:10:24 +0000 Runtime [01:16.106 (m:s.ms)], Operations [667], Last [00:00.007 (m:s.ms)], Throughput (Total) [8.76] (Last 3s) [2.42]
+WorkloadStatusThread  2026/07/04 21:10:26 +0000 Runtime [01:17.207 (m:s.ms)], Operations [694], Last [00:00.039 (m:s.ms)], Throughput (Total) [8.99] (Last 3s) [9.69]
+WorkloadStatusThread  2026/07/04 21:10:27 +0000 Runtime [01:18.307 (m:s.ms)], Operations [695], Last [00:01.003 (m:s.ms)], Throughput (Total) [8.88] (Last 3s) [9.39]
+WorkloadStatusThread  2026/07/04 21:10:28 +0000 Runtime [01:19.408 (m:s.ms)], Operations [710], Last [00:00.048 (m:s.ms)], Throughput (Total) [8.94] (Last 3s) [13.02]
+WorkloadStatusThread  2026/07/04 21:10:29 +0000 Runtime [01:20.509 (m:s.ms)], Operations [712], Last [00:00.578 (m:s.ms)], Throughput (Total) [8.84] (Last 3s) [5.45]
+WorkloadStatusThread  2026/07/04 21:10:30 +0000 Runtime [01:21.609 (m:s.ms)], Operations [713], Last [00:00.997 (m:s.ms)], Throughput (Total) [8.74] (Last 3s) [5.45]
+WorkloadStatusThread  2026/07/04 21:10:31 +0000 Runtime [01:22.710 (m:s.ms)], Operations [716], Last [00:00.404 (m:s.ms)], Throughput (Total) [8.66] (Last 3s) [1.82]
+WorkloadStatusThread  2026/07/04 21:10:32 +0000 Runtime [01:23.810 (m:s.ms)], Operations [739], Last [00:00.287 (m:s.ms)], Throughput (Total) [8.82] (Last 3s) [8.18]
+WorkloadStatusThread  2026/07/04 21:10:33 +0000 Runtime [01:24.911 (m:s.ms)], Operations [749], Last [00:00.094 (m:s.ms)], Throughput (Total) [8.82] (Last 3s) [10.90]
+WorkloadStatusThread  2026/07/04 21:10:34 +0000 Runtime [01:26.011 (m:s.ms)], Operations [756], Last [00:00.339 (m:s.ms)], Throughput (Total) [8.79] (Last 3s) [12.12]
+WorkloadStatusThread  2026/07/04 21:10:35 +0000 Runtime [01:27.112 (m:s.ms)], Operations [758], Last [00:00.458 (m:s.ms)], Throughput (Total) [8.70] (Last 3s) [5.75]
+WorkloadStatusThread  2026/07/04 21:10:37 +0000 Runtime [01:28.212 (m:s.ms)], Operations [779], Last [00:00.297 (m:s.ms)], Throughput (Total) [8.83] (Last 3s) [9.09]
+WorkloadStatusThread  2026/07/04 21:10:38 +0000 Runtime [01:29.313 (m:s.ms)], Operations [792], Last [00:00.464 (m:s.ms)], Throughput (Total) [8.87] (Last 3s) [10.90]
+WorkloadStatusThread  2026/07/04 21:10:39 +0000 Runtime [01:30.413 (m:s.ms)], Operations [793], Last [00:00.697 (m:s.ms)], Throughput (Total) [8.77] (Last 3s) [10.60]
+WorkloadStatusThread  2026/07/04 21:10:40 +0000 Runtime [01:31.513 (m:s.ms)], Operations [813], Last [00:00.002 (m:s.ms)], Throughput (Total) [8.88] (Last 3s) [10.30]
+WorkloadStatusThread  2026/07/04 21:10:41 +0000 Runtime [01:32.615 (m:s.ms)], Operations [827], Last [00:00.785 (m:s.ms)], Throughput (Total) [8.93] (Last 3s) [10.60]
+WorkloadStatusThread  2026/07/04 21:10:42 +0000 Runtime [01:33.715 (m:s.ms)], Operations [829], Last [00:00.447 (m:s.ms)], Throughput (Total) [8.85] (Last 3s) [10.90]
+WorkloadStatusThread  2026/07/04 21:10:43 +0000 Runtime [01:34.816 (m:s.ms)], Operations [844], Last [00:00.029 (m:s.ms)], Throughput (Total) [8.90] (Last 3s) [9.39]
+WorkloadStatusThread  2026/07/04 21:10:44 +0000 Runtime [01:35.916 (m:s.ms)], Operations [854], Last [00:00.040 (m:s.ms)], Throughput (Total) [8.90] (Last 3s) [8.18]
+WorkloadStatusThread  2026/07/04 21:10:45 +0000 Runtime [01:37.017 (m:s.ms)], Operations [856], Last [00:00.384 (m:s.ms)], Throughput (Total) [8.82] (Last 3s) [8.18]
+WorkloadStatusThread  2026/07/04 21:10:46 +0000 Runtime [01:38.117 (m:s.ms)], Operations [864], Last [00:00.007 (m:s.ms)], Throughput (Total) [8.81] (Last 3s) [6.06]
+WorkloadStatusThread  2026/07/04 21:10:48 +0000 Runtime [01:39.218 (m:s.ms)], Operations [866], Last [00:00.099 (m:s.ms)], Throughput (Total) [8.73] (Last 3s) [3.63]
+WorkloadStatusThread  2026/07/04 21:10:49 +0000 Runtime [01:40.318 (m:s.ms)], Operations [894], Last [00:00.033 (m:s.ms)], Throughput (Total) [8.91] (Last 3s) [11.51]
+WorkloadStatusThread  2026/07/04 21:10:50 +0000 Runtime [01:41.418 (m:s.ms)], Operations [894], Last [00:01.133 (m:s.ms)], Throughput (Total) [8.82] (Last 3s) [9.09]
+WorkloadStatusThread  2026/07/04 21:10:51 +0000 Runtime [01:42.519 (m:s.ms)], Operations [895], Last [00:00.512 (m:s.ms)], Throughput (Total) [8.73] (Last 3s) [8.79]
+WorkloadStatusThread  2026/07/04 21:10:52 +0000 Runtime [01:43.619 (m:s.ms)], Operations [919], Last [00:00.139 (m:s.ms)], Throughput (Total) [8.87] (Last 3s) [7.57]
+WorkloadStatusThread  2026/07/04 21:10:53 +0000 Runtime [01:44.720 (m:s.ms)], Operations [921], Last [00:00.129 (m:s.ms)], Throughput (Total) [8.79] (Last 3s) [8.18]
+WorkloadStatusThread  2026/07/04 21:10:54 +0000 Runtime [01:45.820 (m:s.ms)], Operations [940], Last [00:00.422 (m:s.ms)], Throughput (Total) [8.88] (Last 3s) [13.63]
+WorkloadStatusThread  2026/07/04 21:10:55 +0000 Runtime [01:46.921 (m:s.ms)], Operations [942], Last [00:00.057 (m:s.ms)], Throughput (Total) [8.81] (Last 3s) [6.97]
+WorkloadStatusThread  2026/07/04 21:10:56 +0000 Runtime [01:48.021 (m:s.ms)], Operations [976], Last [00:00.015 (m:s.ms)], Throughput (Total) [9.04] (Last 3s) [16.66]
+WorkloadStatusThread  2026/07/04 21:10:57 +0000 Runtime [01:49.122 (m:s.ms)], Operations [978], Last [00:00.188 (m:s.ms)], Throughput (Total) [8.96] (Last 3s) [11.51]
+WorkloadStatusThread  2026/07/04 21:10:59 +0000 Runtime [01:50.222 (m:s.ms)], Operations [993], Last [00:00.281 (m:s.ms)], Throughput (Total) [9.01] (Last 3s) [15.45]
+WorkloadStatusThread  2026/07/04 21:11:00 +0000 Runtime [01:51.323 (m:s.ms)], Operations [1,014], Last [00:00.066 (m:s.ms)], Throughput (Total) [9.11] (Last 3s) [11.51]
+WorkloadStatusThread  2026/07/04 21:11:01 +0000 Runtime [01:52.423 (m:s.ms)], Operations [1,038], Last [00:00.305 (m:s.ms)], Throughput (Total) [9.23] (Last 3s) [18.18]
+WorkloadStatusThread  2026/07/04 21:11:02 +0000 Runtime [01:53.524 (m:s.ms)], Operations [1,041], Last [00:00.285 (m:s.ms)], Throughput (Total) [9.17] (Last 3s) [14.54]
+WorkloadStatusThread  2026/07/04 21:11:03 +0000 Runtime [01:54.624 (m:s.ms)], Operations [1,043], Last [00:00.410 (m:s.ms)], Throughput (Total) [9.10] (Last 3s) [8.79]
+WorkloadStatusThread  2026/07/04 21:11:04 +0000 Runtime [01:55.725 (m:s.ms)], Operations [1,050], Last [00:00.050 (m:s.ms)], Throughput (Total) [9.07] (Last 3s) [3.63]
+WorkloadStatusThread  2026/07/04 21:11:05 +0000 Runtime [01:56.825 (m:s.ms)], Operations [1,054], Last [00:00.002 (m:s.ms)], Throughput (Total) [9.02] (Last 3s) [3.94]
+WorkloadStatusThread  2026/07/04 21:11:06 +0000 Runtime [01:57.926 (m:s.ms)], Operations [1,058], Last [00:00.214 (m:s.ms)], Throughput (Total) [8.97] (Last 3s) [4.54]
+WorkloadStatusThread  2026/07/04 21:11:07 +0000 Runtime [01:59.026 (m:s.ms)], Operations [1,071], Last [00:00.395 (m:s.ms)], Throughput (Total) [9.00] (Last 3s) [6.36]
+WorkloadStatusThread  2026/07/04 21:11:08 +0000 Runtime [02:00.126 (m:s.ms)], Operations [1,088], Last [00:00.413 (m:s.ms)], Throughput (Total) [9.06] (Last 3s) [10.30]
+WorkloadStatusThread  2026/07/04 21:11:09 +0000 Runtime [02:01.128 (m:s.ms)], Operations [1,097], Last [00:00.428 (m:s.ms)], Throughput (Total) [9.06] (Last 3s) [12.18]
+WorkloadStatusThread  2026/07/04 21:11:10 +0000 Runtime [02:02.229 (m:s.ms)], Operations [1,109], Last [00:00.221 (m:s.ms)], Throughput (Total) [9.07] (Last 3s) [11.86]
+WorkloadStatusThread  2026/07/04 21:11:12 +0000 Runtime [02:03.231 (m:s.ms)], Operations [1,128], Last [00:00.348 (m:s.ms)], Throughput (Total) [9.15] (Last 3s) [12.88]
+WorkloadStatusThread  2026/07/04 21:11:13 +0000 Runtime [02:04.331 (m:s.ms)], Operations [1,140], Last [00:00.209 (m:s.ms)], Throughput (Total) [9.17] (Last 3s) [13.42]
+WorkloadStatusThread  2026/07/04 21:11:14 +0000 Runtime [02:05.432 (m:s.ms)], Operations [1,145], Last [00:00.203 (m:s.ms)], Throughput (Total) [9.13] (Last 3s) [11.24]
+WorkloadStatusThread  2026/07/04 21:11:15 +0000 Runtime [02:06.532 (m:s.ms)], Operations [1,166], Last [00:00.049 (m:s.ms)], Throughput (Total) [9.22] (Last 3s) [11.51]
+WorkloadStatusThread  2026/07/04 21:11:16 +0000 Runtime [02:07.632 (m:s.ms)], Operations [1,184], Last [00:00.007 (m:s.ms)], Throughput (Total) [9.28] (Last 3s) [13.33]
+WorkloadStatusThread  2026/07/04 21:11:17 +0000 Runtime [02:08.733 (m:s.ms)], Operations [1,196], Last [00:00.424 (m:s.ms)], Throughput (Total) [9.29] (Last 3s) [15.45]
+WorkloadStatusThread  2026/07/04 21:11:18 +0000 Runtime [02:09.833 (m:s.ms)], Operations [1,200], Last [00:00.086 (m:s.ms)], Throughput (Total) [9.24] (Last 3s) [10.30]
+WorkloadStatusThread  2026/07/04 21:11:19 +0000 Runtime [02:10.934 (m:s.ms)], Operations [1,202], Last [00:00.178 (m:s.ms)], Throughput (Total) [9.18] (Last 3s) [5.45]
+WorkloadStatusThread  2026/07/04 21:11:20 +0000 Runtime [02:12.035 (m:s.ms)], Operations [1,231], Last [00:00.002 (m:s.ms)], Throughput (Total) [9.32] (Last 3s) [10.60]
+WorkloadStatusThread  2026/07/04 21:11:21 +0000 Runtime [02:13.135 (m:s.ms)], Operations [1,241], Last [00:00.535 (m:s.ms)], Throughput (Total) [9.32] (Last 3s) [12.42]
+WorkloadStatusThread  2026/07/04 21:11:23 +0000 Runtime [02:14.236 (m:s.ms)], Operations [1,253], Last [00:00.191 (m:s.ms)], Throughput (Total) [9.33] (Last 3s) [15.45]
+WorkloadStatusThread  2026/07/04 21:11:24 +0000 Runtime [02:15.337 (m:s.ms)], Operations [1,266], Last [00:00.607 (m:s.ms)], Throughput (Total) [9.35] (Last 3s) [10.60]
+WorkloadStatusThread  2026/07/04 21:11:25 +0000 Runtime [02:16.437 (m:s.ms)], Operations [1,270], Last [00:00.356 (m:s.ms)], Throughput (Total) [9.31] (Last 3s) [8.78]
+WorkloadStatusThread  2026/07/04 21:11:26 +0000 Runtime [02:17.538 (m:s.ms)], Operations [1,278], Last [00:00.473 (m:s.ms)], Throughput (Total) [9.29] (Last 3s) [7.57]
+WorkloadStatusThread  2026/07/04 21:11:27 +0000 Runtime [02:18.638 (m:s.ms)], Operations [1,295], Last [00:00.074 (m:s.ms)], Throughput (Total) [9.34] (Last 3s) [8.79]
+WorkloadStatusThread  2026/07/04 21:11:28 +0000 Runtime [02:19.640 (m:s.ms)], Operations [1,309], Last [00:00.225 (m:s.ms)], Throughput (Total) [9.37] (Last 3s) [12.18]
+WorkloadStatusThread  2026/07/04 21:11:29 +0000 Runtime [02:20.740 (m:s.ms)], Operations [1,311], Last [00:00.174 (m:s.ms)], Throughput (Total) [9.32] (Last 3s) [10.31]
+WorkloadStatusThread  2026/07/04 21:11:30 +0000 Runtime [02:21.842 (m:s.ms)], Operations [1,323], Last [00:00.135 (m:s.ms)], Throughput (Total) [9.33] (Last 3s) [8.74]
+WorkloadStatusThread  2026/07/04 21:11:31 +0000 Runtime [02:22.942 (m:s.ms)], Operations [1,324], Last [00:00.671 (m:s.ms)], Throughput (Total) [9.26] (Last 3s) [4.54]
+WorkloadStatusThread  2026/07/04 21:11:32 +0000 Runtime [02:24.043 (m:s.ms)], Operations [1,326], Last [00:00.957 (m:s.ms)], Throughput (Total) [9.21] (Last 3s) [4.54]
+WorkloadStatusThread  2026/07/04 21:11:34 +0000 Runtime [02:25.143 (m:s.ms)], Operations [1,326], Last [00:02.057 (m:s.ms)], Throughput (Total) [9.14] (Last 3s) [0.91]
+WorkloadStatusThread  2026/07/04 21:11:35 +0000 Runtime [02:26.244 (m:s.ms)], Operations [1,346], Last [00:00.413 (m:s.ms)], Throughput (Total) [9.20] (Last 3s) [6.66]
+WorkloadStatusThread  2026/07/04 21:11:36 +0000 Runtime [02:27.344 (m:s.ms)], Operations [1,382], Last [00:00.068 (m:s.ms)], Throughput (Total) [9.38] (Last 3s) [16.96]
+WorkloadStatusThread  2026/07/04 21:11:37 +0000 Runtime [02:28.444 (m:s.ms)], Operations [1,402], Last [00:00.481 (m:s.ms)], Throughput (Total) [9.44] (Last 3s) [23.02]
+WorkloadStatusThread  2026/07/04 21:11:38 +0000 Runtime [02:29.545 (m:s.ms)], Operations [1,403], Last [00:00.412 (m:s.ms)], Throughput (Total) [9.38] (Last 3s) [17.27]
+WorkloadStatusThread  2026/07/04 21:11:39 +0000 Runtime [02:30.645 (m:s.ms)], Operations [1,406], Last [00:00.151 (m:s.ms)], Throughput (Total) [9.33] (Last 3s) [7.27]
+WorkloadStatusThread  2026/07/04 21:11:40 +0000 Runtime [02:31.746 (m:s.ms)], Operations [1,406], Last [00:01.252 (m:s.ms)], Throughput (Total) [9.27] (Last 3s) [1.21]
+WorkloadStatusThread  2026/07/04 21:11:41 +0000 Runtime [02:32.846 (m:s.ms)], Operations [1,416], Last [00:00.310 (m:s.ms)], Throughput (Total) [9.26] (Last 3s) [3.94]
+WorkloadStatusThread  2026/07/04 21:11:42 +0000 Runtime [02:33.947 (m:s.ms)], Operations [1,441], Last [00:00.187 (m:s.ms)], Throughput (Total) [9.36] (Last 3s) [10.60]
+WorkloadStatusThread  2026/07/04 21:11:43 +0000 Runtime [02:35.047 (m:s.ms)], Operations [1,442], Last [00:00.222 (m:s.ms)], Throughput (Total) [9.30] (Last 3s) [10.91]
+WorkloadStatusThread  2026/07/04 21:11:45 +0000 Runtime [02:36.149 (m:s.ms)], Operations [1,466], Last [00:00.768 (m:s.ms)], Throughput (Total) [9.39] (Last 3s) [15.14]
+WorkloadStatusThread  2026/07/04 21:11:46 +0000 Runtime [02:37.249 (m:s.ms)], Operations [1,467], Last [00:00.542 (m:s.ms)], Throughput (Total) [9.33] (Last 3s) [7.87]
+WorkloadStatusThread  2026/07/04 21:11:47 +0000 Runtime [02:38.349 (m:s.ms)], Operations [1,482], Last [00:00.206 (m:s.ms)], Throughput (Total) [9.36] (Last 3s) [12.11]
+WorkloadStatusThread  2026/07/04 21:11:48 +0000 Runtime [02:39.450 (m:s.ms)], Operations [1,498], Last [00:00.233 (m:s.ms)], Throughput (Total) [9.39] (Last 3s) [9.69]
+WorkloadStatusThread  2026/07/04 21:11:49 +0000 Runtime [02:40.550 (m:s.ms)], Operations [1,502], Last [00:00.005 (m:s.ms)], Throughput (Total) [9.36] (Last 3s) [10.60]
+WorkloadStatusThread  2026/07/04 21:11:50 +0000 Runtime [02:41.651 (m:s.ms)], Operations [1,504], Last [00:00.117 (m:s.ms)], Throughput (Total) [9.30] (Last 3s) [6.66]
+WorkloadStatusThread  2026/07/04 21:11:51 +0000 Runtime [02:42.751 (m:s.ms)], Operations [1,526], Last [00:00.009 (m:s.ms)], Throughput (Total) [9.38] (Last 3s) [8.48]
+WorkloadStatusThread  2026/07/04 21:11:52 +0000 Runtime [02:43.852 (m:s.ms)], Operations [1,530], Last [00:00.223 (m:s.ms)], Throughput (Total) [9.34] (Last 3s) [8.48]
+WorkloadStatusThread  2026/07/04 21:11:53 +0000 Runtime [02:44.952 (m:s.ms)], Operations [1,536], Last [00:00.615 (m:s.ms)], Throughput (Total) [9.31] (Last 3s) [9.69]
+WorkloadStatusThread  2026/07/04 21:11:54 +0000 Runtime [02:46.053 (m:s.ms)], Operations [1,539], Last [00:00.712 (m:s.ms)], Throughput (Total) [9.27] (Last 3s) [3.94]
+WorkloadStatusThread  2026/07/04 21:11:56 +0000 Runtime [02:47.153 (m:s.ms)], Operations [1,552], Last [00:00.585 (m:s.ms)], Throughput (Total) [9.28] (Last 3s) [6.66]
+WorkloadStatusThread  2026/07/04 21:11:57 +0000 Runtime [02:48.253 (m:s.ms)], Operations [1,553], Last [00:01.062 (m:s.ms)], Throughput (Total) [9.23] (Last 3s) [5.15]
+WorkloadStatusThread  2026/07/04 21:11:58 +0000 Runtime [02:49.255 (m:s.ms)], Operations [1,555], Last [00:00.058 (m:s.ms)], Throughput (Total) [9.19] (Last 3s) [5.00]
+WorkloadStatusThread  2026/07/04 21:11:59 +0000 Runtime [02:50.257 (m:s.ms)], Operations [1,594], Last [00:00.037 (m:s.ms)], Throughput (Total) [9.36] (Last 3s) [13.53]
+WorkloadStatusThread  2026/07/04 21:12:00 +0000 Runtime [02:51.357 (m:s.ms)], Operations [1,613], Last [00:00.034 (m:s.ms)], Throughput (Total) [9.41] (Last 3s) [19.33]
+WorkloadStatusThread  2026/07/04 21:12:01 +0000 Runtime [02:52.457 (m:s.ms)], Operations [1,649], Last [00:00.030 (m:s.ms)], Throughput (Total) [9.56] (Last 3s) [29.36]
+WorkloadStatusThread  2026/07/04 21:12:02 +0000 Runtime [02:53.558 (m:s.ms)], Operations [1,676], Last [00:00.010 (m:s.ms)], Throughput (Total) [9.66] (Last 3s) [24.84]
+WorkloadStatusThread  2026/07/04 21:12:03 +0000 Runtime [02:54.658 (m:s.ms)], Operations [1,677], Last [00:00.497 (m:s.ms)], Throughput (Total) [9.60] (Last 3s) [19.39]
+WorkloadStatusThread  2026/07/04 21:12:04 +0000 Runtime [02:55.759 (m:s.ms)], Operations [1,689], Last [00:00.083 (m:s.ms)], Throughput (Total) [9.61] (Last 3s) [12.11]
+WorkloadStatusThread  2026/07/04 21:12:05 +0000 Runtime [02:56.859 (m:s.ms)], Operations [1,704], Last [00:00.051 (m:s.ms)], Throughput (Total) [9.63] (Last 3s) [8.48]
+WorkloadStatusThread  2026/07/04 21:12:06 +0000 Runtime [02:57.959 (m:s.ms)], Operations [1,707], Last [00:00.468 (m:s.ms)], Throughput (Total) [9.59] (Last 3s) [9.09]
+WorkloadStatusThread  2026/07/04 21:12:07 +0000 Runtime [02:59.060 (m:s.ms)], Operations [1,711], Last [00:00.352 (m:s.ms)], Throughput (Total) [9.56] (Last 3s) [6.66]
+WorkloadStatusThread  2026/07/04 21:12:09 +0000 Runtime [03:00.160 (m:s.ms)], Operations [1,722], Last [00:00.612 (m:s.ms)], Throughput (Total) [9.56] (Last 3s) [5.45]
+WorkloadStatusThread  2026/07/04 21:12:10 +0000 Runtime [03:01.261 (m:s.ms)], Operations [1,755], Last [00:00.171 (m:s.ms)], Throughput (Total) [9.68] (Last 3s) [14.54]
+WorkloadStatusThread  2026/07/04 21:12:11 +0000 Runtime [03:02.361 (m:s.ms)], Operations [1,758], Last [00:00.198 (m:s.ms)], Throughput (Total) [9.64] (Last 3s) [14.24]
+WorkloadStatusThread  2026/07/04 21:12:12 +0000 Runtime [03:03.462 (m:s.ms)], Operations [1,762], Last [00:00.182 (m:s.ms)], Throughput (Total) [9.60] (Last 3s) [12.11]
+WorkloadStatusThread  2026/07/04 21:12:13 +0000 Runtime [03:04.562 (m:s.ms)], Operations [1,774], Last [00:00.075 (m:s.ms)], Throughput (Total) [9.61] (Last 3s) [5.76]
+WorkloadStatusThread  2026/07/04 21:12:14 +0000 Runtime [03:05.662 (m:s.ms)], Operations [1,778], Last [00:00.332 (m:s.ms)], Throughput (Total) [9.58] (Last 3s) [6.06]
+WorkloadStatusThread  2026/07/04 21:12:15 +0000 Runtime [03:06.763 (m:s.ms)], Operations [1,804], Last [00:00.317 (m:s.ms)], Throughput (Total) [9.66] (Last 3s) [12.72]
+WorkloadStatusThread  2026/07/04 21:12:16 +0000 Runtime [03:07.863 (m:s.ms)], Operations [1,815], Last [00:00.086 (m:s.ms)], Throughput (Total) [9.66] (Last 3s) [12.42]
+WorkloadStatusThread  2026/07/04 21:12:17 +0000 Runtime [03:08.963 (m:s.ms)], Operations [1,833], Last [00:00.207 (m:s.ms)], Throughput (Total) [9.70] (Last 3s) [16.66]
+WorkloadStatusThread  2026/07/04 21:12:18 +0000 Runtime [03:10.064 (m:s.ms)], Operations [1,834], Last [00:00.511 (m:s.ms)], Throughput (Total) [9.65] (Last 3s) [9.09]
+WorkloadStatusThread  2026/07/04 21:12:20 +0000 Runtime [03:11.164 (m:s.ms)], Operations [1,850], Last [00:00.247 (m:s.ms)], Throughput (Total) [9.68] (Last 3s) [10.60]
+WorkloadStatusThread  2026/07/04 21:12:21 +0000 Runtime [03:12.265 (m:s.ms)], Operations [1,860], Last [00:00.038 (m:s.ms)], Throughput (Total) [9.67] (Last 3s) [8.18]
+WorkloadStatusThread  2026/07/04 21:12:22 +0000 Runtime [03:13.365 (m:s.ms)], Operations [1,879], Last [00:00.031 (m:s.ms)], Throughput (Total) [9.72] (Last 3s) [13.63]
+WorkloadStatusThread  2026/07/04 21:12:23 +0000 Runtime [03:14.465 (m:s.ms)], Operations [1,881], Last [00:00.343 (m:s.ms)], Throughput (Total) [9.67] (Last 3s) [9.39]
+WorkloadStatusThread  2026/07/04 21:12:24 +0000 Runtime [03:15.566 (m:s.ms)], Operations [1,889], Last [00:00.076 (m:s.ms)], Throughput (Total) [9.66] (Last 3s) [8.79]
+WorkloadStatusThread  2026/07/04 21:12:25 +0000 Runtime [03:16.666 (m:s.ms)], Operations [1,914], Last [00:00.113 (m:s.ms)], Throughput (Total) [9.73] (Last 3s) [10.60]
+WorkloadStatusThread  2026/07/04 21:12:26 +0000 Runtime [03:17.767 (m:s.ms)], Operations [1,933], Last [00:00.099 (m:s.ms)], Throughput (Total) [9.77] (Last 3s) [15.75]
+WorkloadStatusThread  2026/07/04 21:12:27 +0000 Runtime [03:18.867 (m:s.ms)], Operations [1,953], Last [00:00.790 (m:s.ms)], Throughput (Total) [9.82] (Last 3s) [19.39]
+WorkloadStatusThread  2026/07/04 21:12:28 +0000 Runtime [03:19.968 (m:s.ms)], Operations [1,963], Last [00:00.386 (m:s.ms)], Throughput (Total) [9.82] (Last 3s) [14.84]
+WorkloadStatusThread  2026/07/04 21:12:29 +0000 Runtime [03:21.068 (m:s.ms)], Operations [1,977], Last [00:00.128 (m:s.ms)], Throughput (Total) [9.83] (Last 3s) [13.33]
+WorkloadStatusThread  2026/07/04 21:12:31 +0000 Runtime [03:22.168 (m:s.ms)], Operations [1,985], Last [00:00.235 (m:s.ms)], Throughput (Total) [9.82] (Last 3s) [9.69]
+WorkloadStatusThread  2026/07/04 21:12:32 +0000 Runtime [03:23.269 (m:s.ms)], Operations [1,996], Last [00:00.084 (m:s.ms)], Throughput (Total) [9.82] (Last 3s) [10.00]
+WorkloadStatusThread  2026/07/04 21:12:33 +0000 Runtime [03:24.369 (m:s.ms)], Operations [2,006], Last [00:00.047 (m:s.ms)], Throughput (Total) [9.82] (Last 3s) [8.79]
+WorkloadStatusThread  2026/07/04 21:12:34 +0000 Runtime [03:25.470 (m:s.ms)], Operations [2,032], Last [00:00.207 (m:s.ms)], Throughput (Total) [9.89] (Last 3s) [14.23]
+WorkloadStatusThread  2026/07/04 21:12:35 +0000 Runtime [03:26.570 (m:s.ms)], Operations [2,041], Last [00:00.521 (m:s.ms)], Throughput (Total) [9.88] (Last 3s) [13.63]
+WorkloadStatusThread  2026/07/04 21:12:36 +0000 Runtime [03:27.670 (m:s.ms)], Operations [2,045], Last [00:00.552 (m:s.ms)], Throughput (Total) [9.85] (Last 3s) [11.81]
+WorkloadStatusThread  2026/07/04 21:12:37 +0000 Runtime [03:28.771 (m:s.ms)], Operations [2,046], Last [00:00.953 (m:s.ms)], Throughput (Total) [9.80] (Last 3s) [4.24]
+WorkloadStatusThread  2026/07/04 21:12:38 +0000 Runtime [03:29.871 (m:s.ms)], Operations [2,049], Last [00:00.832 (m:s.ms)], Throughput (Total) [9.76] (Last 3s) [2.42]
+WorkloadStatusThread  2026/07/04 21:12:39 +0000 Runtime [03:30.971 (m:s.ms)], Operations [2,051], Last [00:00.538 (m:s.ms)], Throughput (Total) [9.72] (Last 3s) [1.82]
+WorkloadStatusThread  2026/07/04 21:12:40 +0000 Runtime [03:32.072 (m:s.ms)], Operations [2,053], Last [00:00.030 (m:s.ms)], Throughput (Total) [9.68] (Last 3s) [2.12]
+WorkloadStatusThread  2026/07/04 21:12:42 +0000 Runtime [03:33.172 (m:s.ms)], Operations [2,105], Last [00:00.502 (m:s.ms)], Throughput (Total) [9.87] (Last 3s) [16.96]
+WorkloadStatusThread  2026/07/04 21:12:43 +0000 Runtime [03:34.272 (m:s.ms)], Operations [2,118], Last [00:00.025 (m:s.ms)], Throughput (Total) [9.88] (Last 3s) [20.30]
+WorkloadStatusThread  2026/07/04 21:12:44 +0000 Runtime [03:35.373 (m:s.ms)], Operations [2,121], Last [00:00.299 (m:s.ms)], Throughput (Total) [9.85] (Last 3s) [20.60]
+WorkloadStatusThread  2026/07/04 21:12:45 +0000 Runtime [03:36.473 (m:s.ms)], Operations [2,135], Last [00:00.383 (m:s.ms)], Throughput (Total) [9.86] (Last 3s) [9.09]
+WorkloadStatusThread  2026/07/04 21:12:46 +0000 Runtime [03:37.574 (m:s.ms)], Operations [2,135], Last [00:01.484 (m:s.ms)], Throughput (Total) [9.81] (Last 3s) [5.15]
+WorkloadStatusThread  2026/07/04 21:12:47 +0000 Runtime [03:38.674 (m:s.ms)], Operations [2,140], Last [00:00.024 (m:s.ms)], Throughput (Total) [9.79] (Last 3s) [5.76]
+WorkloadStatusThread  2026/07/04 21:12:48 +0000 Runtime [03:39.774 (m:s.ms)], Operations [2,152], Last [00:00.175 (m:s.ms)], Throughput (Total) [9.79] (Last 3s) [5.15]
+WorkloadStatusThread  2026/07/04 21:12:49 +0000 Runtime [03:40.776 (m:s.ms)], Operations [2,161], Last [00:00.338 (m:s.ms)], Throughput (Total) [9.79] (Last 3s) [8.12]
+WorkloadStatusThread  2026/07/04 21:12:50 +0000 Runtime [03:41.877 (m:s.ms)], Operations [2,188], Last [00:00.068 (m:s.ms)], Throughput (Total) [9.86] (Last 3s) [14.99]
+WorkloadStatusThread  2026/07/04 21:12:51 +0000 Runtime [03:42.977 (m:s.ms)], Operations [2,191], Last [00:00.332 (m:s.ms)], Throughput (Total) [9.83] (Last 3s) [12.18]
+WorkloadStatusThread  2026/07/04 21:12:52 +0000 Runtime [03:44.078 (m:s.ms)], Operations [2,197], Last [00:00.750 (m:s.ms)], Throughput (Total) [9.80] (Last 3s) [10.90]
+WorkloadStatusThread  2026/07/04 21:12:54 +0000 Runtime [03:45.178 (m:s.ms)], Operations [2,207], Last [00:00.008 (m:s.ms)], Throughput (Total) [9.80] (Last 3s) [5.76]
+WorkloadStatusThread  2026/07/04 21:12:55 +0000 Runtime [03:46.278 (m:s.ms)], Operations [2,215], Last [00:00.253 (m:s.ms)], Throughput (Total) [9.79] (Last 3s) [7.27]
+WorkloadStatusThread  2026/07/04 21:12:56 +0000 Runtime [03:47.379 (m:s.ms)], Operations [2,222], Last [00:00.132 (m:s.ms)], Throughput (Total) [9.77] (Last 3s) [7.57]
+WorkloadStatusThread  2026/07/04 21:12:57 +0000 Runtime [03:48.479 (m:s.ms)], Operations [2,233], Last [00:00.005 (m:s.ms)], Throughput (Total) [9.77] (Last 3s) [7.88]
+WorkloadStatusThread  2026/07/04 21:12:58 +0000 Runtime [03:49.580 (m:s.ms)], Operations [2,243], Last [00:00.053 (m:s.ms)], Throughput (Total) [9.77] (Last 3s) [8.48]
+WorkloadStatusThread  2026/07/04 21:12:59 +0000 Runtime [03:50.680 (m:s.ms)], Operations [2,257], Last [00:00.381 (m:s.ms)], Throughput (Total) [9.78] (Last 3s) [10.60]
+WorkloadStatusThread  2026/07/04 21:13:00 +0000 Runtime [03:51.781 (m:s.ms)], Operations [2,266], Last [00:00.247 (m:s.ms)], Throughput (Total) [9.78] (Last 3s) [9.99]
+WorkloadStatusThread  2026/07/04 21:13:01 +0000 Runtime [03:52.881 (m:s.ms)], Operations [2,271], Last [00:00.360 (m:s.ms)], Throughput (Total) [9.75] (Last 3s) [8.48]
+WorkloadStatusThread  2026/07/04 21:13:02 +0000 Runtime [03:53.981 (m:s.ms)], Operations [2,283], Last [00:00.020 (m:s.ms)], Throughput (Total) [9.76] (Last 3s) [7.88]
+WorkloadStatusThread  2026/07/04 21:13:03 +0000 Runtime [03:55.082 (m:s.ms)], Operations [2,285], Last [00:00.373 (m:s.ms)], Throughput (Total) [9.72] (Last 3s) [5.76]
+WorkloadStatusThread  2026/07/04 21:13:05 +0000 Runtime [03:56.182 (m:s.ms)], Operations [2,291], Last [00:00.312 (m:s.ms)], Throughput (Total) [9.70] (Last 3s) [6.06]
+WorkloadStatusThread  2026/07/04 21:13:06 +0000 Runtime [03:57.282 (m:s.ms)], Operations [2,293], Last [00:00.142 (m:s.ms)], Throughput (Total) [9.66] (Last 3s) [3.03]
+WorkloadStatusThread  2026/07/04 21:13:07 +0000 Runtime [03:58.383 (m:s.ms)], Operations [2,318], Last [00:00.190 (m:s.ms)], Throughput (Total) [9.72] (Last 3s) [10.00]
+WorkloadStatusThread  2026/07/04 21:13:08 +0000 Runtime [03:59.484 (m:s.ms)], Operations [2,350], Last [00:00.025 (m:s.ms)], Throughput (Total) [9.81] (Last 3s) [17.87]
+WorkloadStatusThread  2026/07/04 21:13:09 +0000 Runtime [04:00.584 (m:s.ms)], Operations [2,352], Last [00:00.318 (m:s.ms)], Throughput (Total) [9.78] (Last 3s) [17.87]
+WorkloadStatusThread  2026/07/04 21:13:10 +0000 Runtime [04:01.684 (m:s.ms)], Operations [2,373], Last [00:00.621 (m:s.ms)], Throughput (Total) [9.82] (Last 3s) [16.66]
+WorkloadStatusThread  2026/07/04 21:13:11 +0000 Runtime [04:02.785 (m:s.ms)], Operations [2,389], Last [00:00.247 (m:s.ms)], Throughput (Total) [9.84] (Last 3s) [11.81]
+WorkloadStatusThread  2026/07/04 21:13:12 +0000 Runtime [04:03.885 (m:s.ms)], Operations [2,395], Last [00:00.226 (m:s.ms)], Throughput (Total) [9.82] (Last 3s) [13.03]
+WorkloadStatusThread  2026/07/04 21:13:13 +0000 Runtime [04:04.986 (m:s.ms)], Operations [2,418], Last [00:00.081 (m:s.ms)], Throughput (Total) [9.87] (Last 3s) [13.63]
+WorkloadStatusThread  2026/07/04 21:13:14 +0000 Runtime [04:06.086 (m:s.ms)], Operations [2,424], Last [00:00.320 (m:s.ms)], Throughput (Total) [9.85] (Last 3s) [10.60]
+WorkloadStatusThread  2026/07/04 21:13:16 +0000 Runtime [04:07.186 (m:s.ms)], Operations [2,426], Last [00:00.014 (m:s.ms)], Throughput (Total) [9.81] (Last 3s) [9.39]
+WorkloadStatusThread  2026/07/04 21:13:17 +0000 Runtime [04:08.287 (m:s.ms)], Operations [2,449], Last [00:00.041 (m:s.ms)], Throughput (Total) [9.86] (Last 3s) [9.39]
+WorkloadStatusThread  2026/07/04 21:13:18 +0000 Runtime [04:09.288 (m:s.ms)], Operations [2,458], Last [00:00.475 (m:s.ms)], Throughput (Total) [9.86] (Last 3s) [10.62]
+WorkloadStatusThread  2026/07/04 21:13:19 +0000 Runtime [04:10.389 (m:s.ms)], Operations [2,467], Last [00:00.041 (m:s.ms)], Throughput (Total) [9.85] (Last 3s) [12.80]
+WorkloadStatusThread  2026/07/04 21:13:20 +0000 Runtime [04:11.489 (m:s.ms)], Operations [2,483], Last [00:00.234 (m:s.ms)], Throughput (Total) [9.87] (Last 3s) [10.62]
+WorkloadStatusThread  2026/07/04 21:13:21 +0000 Runtime [04:12.589 (m:s.ms)], Operations [2,485], Last [00:00.332 (m:s.ms)], Throughput (Total) [9.84] (Last 3s) [8.18]
+WorkloadStatusThread  2026/07/04 21:13:22 +0000 Runtime [04:13.690 (m:s.ms)], Operations [2,521], Last [00:00.548 (m:s.ms)], Throughput (Total) [9.94] (Last 3s) [16.36]
+WorkloadStatusThread  2026/07/04 21:13:23 +0000 Runtime [04:14.790 (m:s.ms)], Operations [2,531], Last [00:00.288 (m:s.ms)], Throughput (Total) [9.93] (Last 3s) [14.54]
+WorkloadStatusThread  2026/07/04 21:13:24 +0000 Runtime [04:15.891 (m:s.ms)], Operations [2,557], Last [00:00.077 (m:s.ms)], Throughput (Total) [9.99] (Last 3s) [21.80]
+WorkloadStatusThread  2026/07/04 21:13:25 +0000 Runtime [04:16.991 (m:s.ms)], Operations [2,559], Last [00:00.204 (m:s.ms)], Throughput (Total) [9.96] (Last 3s) [11.51]
+WorkloadStatusThread  2026/07/04 21:13:26 +0000 Runtime [04:18.091 (m:s.ms)], Operations [2,561], Last [00:00.356 (m:s.ms)], Throughput (Total) [9.92] (Last 3s) [9.09]
+WorkloadStatusThread  2026/07/04 21:13:28 +0000 Runtime [04:19.192 (m:s.ms)], Operations [2,563], Last [00:00.383 (m:s.ms)], Throughput (Total) [9.89] (Last 3s) [1.82]
+WorkloadStatusThread  2026/07/04 21:13:29 +0000 Runtime [04:20.292 (m:s.ms)], Operations [2,565], Last [00:00.167 (m:s.ms)], Throughput (Total) [9.85] (Last 3s) [1.82]
+WorkloadStatusThread  2026/07/04 21:13:30 +0000 Runtime [04:21.392 (m:s.ms)], Operations [2,574], Last [00:00.638 (m:s.ms)], Throughput (Total) [9.85] (Last 3s) [3.94]
+WorkloadStatusThread  2026/07/04 21:13:31 +0000 Runtime [04:22.493 (m:s.ms)], Operations [2,574], Last [00:01.739 (m:s.ms)], Throughput (Total) [9.81] (Last 3s) [3.33]
+WorkloadStatusThread  2026/07/04 21:13:32 +0000 Runtime [04:23.593 (m:s.ms)], Operations [2,603], Last [00:00.149 (m:s.ms)], Throughput (Total) [9.88] (Last 3s) [11.51]
+WorkloadStatusThread  2026/07/04 21:13:33 +0000 Runtime [04:24.695 (m:s.ms)], Operations [2,648], Last [00:00.073 (m:s.ms)], Throughput (Total) [10.00] (Last 3s) [22.40]
+WorkloadStatusThread  2026/07/04 21:13:34 +0000 Runtime [04:25.795 (m:s.ms)], Operations [2,655], Last [00:00.026 (m:s.ms)], Throughput (Total) [9.99] (Last 3s) [24.53]
+WorkloadStatusThread  2026/07/04 21:13:35 +0000 Runtime [04:26.896 (m:s.ms)], Operations [2,662], Last [00:00.578 (m:s.ms)], Throughput (Total) [9.97] (Last 3s) [17.86]
+WorkloadStatusThread  2026/07/04 21:13:36 +0000 Runtime [04:27.996 (m:s.ms)], Operations [2,662], Last [00:01.678 (m:s.ms)], Throughput (Total) [9.93] (Last 3s) [4.24]
+WorkloadStatusThread  2026/07/04 21:13:37 +0000 Runtime [04:29.096 (m:s.ms)], Operations [2,663], Last [00:00.724 (m:s.ms)], Throughput (Total) [9.90] (Last 3s) [2.42]
+WorkloadStatusThread  2026/07/04 21:13:39 +0000 Runtime [04:30.197 (m:s.ms)], Operations [2,674], Last [00:00.063 (m:s.ms)], Throughput (Total) [9.90] (Last 3s) [3.64]
+WorkloadStatusThread  2026/07/04 21:13:40 +0000 Runtime [04:31.297 (m:s.ms)], Operations [2,679], Last [00:00.009 (m:s.ms)], Throughput (Total) [9.87] (Last 3s) [5.15]
+WorkloadStatusThread  2026/07/04 21:13:41 +0000 Runtime [04:32.299 (m:s.ms)], Operations [2,690], Last [00:00.709 (m:s.ms)], Throughput (Total) [9.88] (Last 3s) [8.43]
+WorkloadStatusThread  2026/07/04 21:13:42 +0000 Runtime [04:33.399 (m:s.ms)], Operations [2,715], Last [00:00.394 (m:s.ms)], Throughput (Total) [9.93] (Last 3s) [12.80]
+WorkloadStatusThread  2026/07/04 21:13:43 +0000 Runtime [04:34.500 (m:s.ms)], Operations [2,736], Last [00:00.086 (m:s.ms)], Throughput (Total) [9.97] (Last 3s) [17.80]
+WorkloadStatusThread  2026/07/04 21:13:44 +0000 Runtime [04:35.600 (m:s.ms)], Operations [2,736], Last [00:01.186 (m:s.ms)], Throughput (Total) [9.93] (Last 3s) [13.94]
+WorkloadStatusThread  2026/07/04 21:13:45 +0000 Runtime [04:36.701 (m:s.ms)], Operations [2,739], Last [00:00.508 (m:s.ms)], Throughput (Total) [9.90] (Last 3s) [7.27]
+WorkloadStatusThread  2026/07/04 21:13:46 +0000 Runtime [04:37.801 (m:s.ms)], Operations [2,758], Last [00:00.411 (m:s.ms)], Throughput (Total) [9.93] (Last 3s) [6.66]
+WorkloadStatusThread  2026/07/04 21:13:47 +0000 Runtime [04:38.901 (m:s.ms)], Operations [2,758], Last [00:01.511 (m:s.ms)], Throughput (Total) [9.89] (Last 3s) [6.66]
+WorkloadStatusThread  2026/07/04 21:13:48 +0000 Runtime [04:40.002 (m:s.ms)], Operations [2,774], Last [00:00.189 (m:s.ms)], Throughput (Total) [9.91] (Last 3s) [10.60]
+WorkloadStatusThread  2026/07/04 21:13:49 +0000 Runtime [04:41.102 (m:s.ms)], Operations [2,776], Last [00:00.678 (m:s.ms)], Throughput (Total) [9.88] (Last 3s) [5.45]
+WorkloadStatusThread  2026/07/04 21:13:51 +0000 Runtime [04:42.202 (m:s.ms)], Operations [2,790], Last [00:00.379 (m:s.ms)], Throughput (Total) [9.89] (Last 3s) [9.69]
+WorkloadStatusThread  2026/07/04 21:13:52 +0000 Runtime [04:43.303 (m:s.ms)], Operations [2,794], Last [00:00.011 (m:s.ms)], Throughput (Total) [9.86] (Last 3s) [6.06]
+WorkloadStatusThread  2026/07/04 21:13:53 +0000 Runtime [04:44.403 (m:s.ms)], Operations [2,818], Last [00:00.060 (m:s.ms)], Throughput (Total) [9.91] (Last 3s) [12.72]
+WorkloadStatusThread  2026/07/04 21:13:54 +0000 Runtime [04:45.503 (m:s.ms)], Operations [2,824], Last [00:00.316 (m:s.ms)], Throughput (Total) [9.89] (Last 3s) [10.30]
+WorkloadStatusThread  2026/07/04 21:13:55 +0000 Runtime [04:46.604 (m:s.ms)], Operations [2,832], Last [00:00.749 (m:s.ms)], Throughput (Total) [9.88] (Last 3s) [11.51]
+WorkloadStatusThread  2026/07/04 21:13:56 +0000 Runtime [04:47.704 (m:s.ms)], Operations [2,851], Last [00:00.085 (m:s.ms)], Throughput (Total) [9.91] (Last 3s) [10.00]
+WorkloadStatusThread  2026/07/04 21:13:57 +0000 Runtime [04:48.804 (m:s.ms)], Operations [2,857], Last [00:00.041 (m:s.ms)], Throughput (Total) [9.89] (Last 3s) [10.00]
+WorkloadStatusThread  2026/07/04 21:13:58 +0000 Runtime [04:49.905 (m:s.ms)], Operations [2,874], Last [00:00.071 (m:s.ms)], Throughput (Total) [9.91] (Last 3s) [12.72]
+WorkloadStatusThread  2026/07/04 21:13:59 +0000 Runtime [04:51.005 (m:s.ms)], Operations [2,874], Last [00:01.171 (m:s.ms)], Throughput (Total) [9.88] (Last 3s) [6.97]
+WorkloadStatusThread  2026/07/04 21:14:00 +0000 Runtime [04:52.105 (m:s.ms)], Operations [2,885], Last [00:00.439 (m:s.ms)], Throughput (Total) [9.88] (Last 3s) [8.48]
+WorkloadStatusThread  2026/07/04 21:14:01 +0000 Runtime [04:53.107 (m:s.ms)], Operations [2,915], Last [00:00.028 (m:s.ms)], Throughput (Total) [9.95] (Last 3s) [12.80]
+Shutting down status thread...
+ExecuteWorkloadMode  Shutting down workload...
+ExecuteWorkloadMode  Shutting down completion time service...
+ExecuteWorkloadMode  Shutting down metrics collection service...
+ExecuteWorkloadMode  
+------------------------------------------------------------------------------
+Operation Count:                        2,948
+Duration:                               04:53.637.000 (m:s.ms.us)
+Throughput:                             10.04 (op/s)
+Start Time (Coordinated Universal Time):2026-07-04 - 21:09:08.758
+Finish Time (Coordinated Universal Time):2026-07-04 - 21:14:02.395
+------------------------------------------------------------------------------
+    LdbcQuery1
+        Units:              MILLISECONDS
+        Count:              25
+        Min:                4
+        Max:                106
+        Mean:               40.16
+        50th Percentile:    39
+        90th Percentile:    88
+        95th Percentile:    92
+        99th Percentile:    106
+    LdbcQuery10
+        Units:              MILLISECONDS
+        Count:              22
+        Min:                210
+        Max:                563
+        Mean:               324.82
+        50th Percentile:    285
+        90th Percentile:    532
+        95th Percentile:    540
+        99th Percentile:    563
+    LdbcQuery11
+        Units:              MILLISECONDS
+        Count:              41
+        Min:                11
+        Max:                58
+        Mean:               29.17
+        50th Percentile:    27
+        90th Percentile:    47
+        95th Percentile:    51
+        99th Percentile:    58
+    LdbcQuery12
+        Units:              MILLISECONDS
+        Count:              15
+        Min:                244
+        Max:                466
+        Mean:               320.87
+        50th Percentile:    302
+        90th Percentile:    445
+        95th Percentile:    445
+        99th Percentile:    466
+    LdbcQuery13
+        Units:              MILLISECONDS
+        Count:              35
+        Min:                1
+        Max:                9
+        Mean:               4.37
+        50th Percentile:    4
+        90th Percentile:    6
+        95th Percentile:    7
+        99th Percentile:    9
+    LdbcQuery14
+        Units:              MILLISECONDS
+        Count:              13
+        Min:                15
+        Max:                1,175
+        Mean:               493.46
+        50th Percentile:    437
+        90th Percentile:    1,008
+        95th Percentile:    1,008
+        99th Percentile:    1,175
+    LdbcQuery2
+        Units:              MILLISECONDS
+        Count:              18
+        Min:                17
+        Max:                385
+        Mean:               55.61
+        50th Percentile:    25
+        90th Percentile:    95
+        95th Percentile:    105
+        99th Percentile:    385
+    LdbcQuery3
+        Units:              MILLISECONDS
+        Count:              10
+        Min:                1,559
+        Max:                1,922
+        Mean:               1,762.40
+        50th Percentile:    1,730
+        90th Percentile:    1,903
+        95th Percentile:    1,922
+        99th Percentile:    1,922
+    LdbcQuery4
+        Units:              MILLISECONDS
+        Count:              19
+        Min:                11
+        Max:                47
+        Mean:               28.32
+        50th Percentile:    24
+        90th Percentile:    45
+        95th Percentile:    45
+        99th Percentile:    47
+    LdbcQuery5
+        Units:              MILLISECONDS
+        Count:              11
+        Min:                691
+        Max:                2,047
+        Mean:               1,335.91
+        50th Percentile:    1,411
+        90th Percentile:    1,685
+        95th Percentile:    1,685
+        99th Percentile:    2,047
+    LdbcQuery6
+        Units:              MILLISECONDS
+        Count:              5
+        Min:                1,219
+        Max:                1,764
+        Mean:               1,368.80
+        50th Percentile:    1,242
+        90th Percentile:    1,764
+        95th Percentile:    1,764
+        99th Percentile:    1,764
+    LdbcQuery7
+        Units:              MILLISECONDS
+        Count:              8
+        Min:                24
+        Max:                152
+        Mean:               59.38
+        50th Percentile:    34
+        90th Percentile:    95
+        95th Percentile:    152
+        99th Percentile:    152
+    LdbcQuery8
+        Units:              MILLISECONDS
+        Count:              15
+        Min:                2
+        Max:                7
+        Mean:               3.93
+        50th Percentile:    4
+        90th Percentile:    6
+        95th Percentile:    6
+        99th Percentile:    7
+    LdbcQuery9
+        Units:              MILLISECONDS
+        Count:              4
+        Min:                1,867
+        Max:                2,329
+        Mean:               2,091.50
+        50th Percentile:    2,017
+        90th Percentile:    2,329
+        95th Percentile:    2,329
+        99th Percentile:    2,329
+    LdbcShortQuery1PersonProfile
+        Units:              MILLISECONDS
+        Count:              283
+        Min:                0
+        Max:                28
+        Mean:               1.79
+        50th Percentile:    1
+        90th Percentile:    3
+        95th Percentile:    4
+        99th Percentile:    6
+    LdbcShortQuery2PersonPosts
+        Units:              MILLISECONDS
+        Count:              283
+        Min:                1
+        Max:                55
+        Mean:               4.73
+        50th Percentile:    3
+        90th Percentile:    9
+        95th Percentile:    13
+        99th Percentile:    27
+    LdbcShortQuery3PersonFriends
+        Units:              MILLISECONDS
+        Count:              283
+        Min:                1
+        Max:                18
+        Mean:               2.82
+        50th Percentile:    2
+        90th Percentile:    6
+        95th Percentile:    8
+        99th Percentile:    15
+    LdbcShortQuery4MessageContent
+        Units:              MILLISECONDS
+        Count:              295
+        Min:                1
+        Max:                30
+        Mean:               1.88
+        50th Percentile:    1
+        90th Percentile:    3
+        95th Percentile:    4
+        99th Percentile:    7
+    LdbcShortQuery5MessageCreator
+        Units:              MILLISECONDS
+        Count:              295
+        Min:                0
+        Max:                13
+        Mean:               1.57
+        50th Percentile:    1
+        90th Percentile:    3
+        95th Percentile:    3
+        99th Percentile:    6
+    LdbcShortQuery6MessageForum
+        Units:              MILLISECONDS
+        Count:              295
+        Min:                1
+        Max:                95
+        Mean:               1.83
+        50th Percentile:    1
+        90th Percentile:    3
+        95th Percentile:    3
+        99th Percentile:    6
+    LdbcShortQuery7MessageReplies
+        Units:              MILLISECONDS
+        Count:              295
+        Min:                1
+        Max:                18
+        Mean:               1.85
+        50th Percentile:    1
+        90th Percentile:    3
+        95th Percentile:    4
+        99th Percentile:    7
+    LdbcUpdate2AddPostLike
+        Units:              MILLISECONDS
+        Count:              88
+        Min:                2
+        Max:                18
+        Mean:               4.95
+        50th Percentile:    4
+        90th Percentile:    6
+        95th Percentile:    9
+        99th Percentile:    12
+    LdbcUpdate3AddCommentLike
+        Units:              MILLISECONDS
+        Count:              121
+        Min:                2
+        Max:                26
+        Mean:               4.86
+        50th Percentile:    4
+        90th Percentile:    6
+        95th Percentile:    8
+        99th Percentile:    13
+    LdbcUpdate4AddForum
+        Units:              MILLISECONDS
+        Count:              7
+        Min:                5
+        Max:                9
+        Mean:               6.71
+        50th Percentile:    6
+        90th Percentile:    9
+        95th Percentile:    9
+        99th Percentile:    9
+    LdbcUpdate5AddForumMembership
+        Units:              MILLISECONDS
+        Count:              297
+        Min:                2
+        Max:                12
+        Mean:               4.64
+        50th Percentile:    4
+        90th Percentile:    6
+        95th Percentile:    7
+        99th Percentile:    10
+    LdbcUpdate6AddPost
+        Units:              MILLISECONDS
+        Count:              59
+        Min:                4
+        Max:                46
+        Mean:               7.25
+        50th Percentile:    6
+        90th Percentile:    10
+        95th Percentile:    12
+        99th Percentile:    13
+    LdbcUpdate7AddComment
+        Units:              MILLISECONDS
+        Count:              94
+        Min:                4
+        Max:                15
+        Mean:               6.80
+        50th Percentile:    6
+        90th Percentile:    10
+        95th Percentile:    11
+        99th Percentile:    13
+    LdbcUpdate8AddFriendship
+        Units:              MILLISECONDS
+        Count:              12
+        Min:                3
+        Max:                6
+        Mean:               4.42
+        50th Percentile:    4
+        90th Percentile:    5
+        95th Percentile:    5
+        99th Percentile:    6
+------------------------------------------------------------------------------
+
+ExecuteWorkloadMode  Exporting workload metrics to /opt/ldbc-snb/ldbc_snb_interactive_v1_impls/cypher/results/LDBC-SNB-results.json...
+ExecuteWorkloadMode  Validating workload results...
+ExecuteWorkloadMode  Exporting workload results validation to: /opt/ldbc-snb/ldbc_snb_interactive_v1_impls/cypher/results/LDBC-SNB-validation.json
+ExecuteWorkloadMode  PASSED SCHEDULE AUDIT -- workload operations executed to schedule
+ExecuteWorkloadMode  Shutting down database connector...
+ExecuteWorkloadMode  Database connector shutdown successfully in: PT0.222007S
+ExecuteWorkloadMode  Workload completed successfully
